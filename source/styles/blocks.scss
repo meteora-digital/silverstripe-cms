@@ -1,0 +1,22 @@
+#Root_Blocks {
+  .pull-xs-right,
+  .btn-toolbar {
+    // Generic clearfix
+    &:before,
+    &:after {
+      content: '';
+      display: table;
+    }
+  
+    &:after {
+      clear: both;
+    }
+  }
+
+  .pull-xs-right {
+    * {
+      float: left;
+      margin-left: 0;
+    }
+  }
+}

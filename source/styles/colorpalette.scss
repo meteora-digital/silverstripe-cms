@@ -1,0 +1,30 @@
+ul.colorpalette {
+  margin-bottom: 0;
+
+  li {
+    label {
+      position: relative;
+      border-radius: .5rem;
+      outline: 2px solid #ced5e1!important;
+    }
+
+    input[value="none"],
+    input[value="transparent"] {
+      + label:before {
+        content: 'unset';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: .6;
+        font-size: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        transform: translate(-50%, -50%);
+      }
+
+      &:checked + label:before {
+        content: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.ui-dialog {
+  position: fixed!important;
+  top: 50%!important;
+  left: 50%!important;
+  width: 60rem!important;
+  height: auto!important;
+  max-width: calc(100% - 40px)!important;
+  max-height: calc(100% - 40px)!important;
+  transform: translate(-50%, -50%)!important;
+
+  .ui-dialog-content {
+    width: auto!important;
+    height: auto!important;
+  }
+
+  .linkfield-dialog {
+    padding: 40px!important;
+  }
+
+  .btn {
+    margin-left: 0!important;
+  }
+
+  .ui-tabs .ui-tabs-nav li a {
+    padding: 0!important;
+  }
+}

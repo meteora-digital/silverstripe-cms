@@ -1,0 +1,267 @@
+@mixin cms-logo($url, $width, $height) {
+  .cms-sitename {
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-bottom: percentage($height / $width);
+      background-image: url('#{$url}');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.cms-menu {
+  color: var(--cms-text-colour);
+  background-color: var(--cms-background-colour--dark);
+
+  &,
+  &.collapsed {
+    width: 250px !important;
+  }
+
+  .cms-subsites {
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+    border-bottom: 1px solid var(--cms-border-colour);
+
+    .chosen-single {
+      b {
+        background-position: 5px 8px !important;
+      }
+    }
+  }
+
+  .cms-panel-content,
+  .cms-menu__list,
+  .cms-panel-toggle,
+  .cms-subsites {
+    box-shadow: inset -1px 0 0 var(--cms-border-colour) !important;
+  }
+
+  &__header {
+    background-color: var(--cms-background-colour--dark);
+  }
+
+  .cms-sitename {
+    border-bottom: 1px solid var(--cms-border-colour) !important;
+    background-color: var(--cms-background-colour--dark)  !important;
+    box-shadow: inset -1px 0 0 var(--cms-border-colour)  !important;
+    height: auto !important;
+    padding: 20px 30px !important;
+
+    &__link,
+    &__title {
+      display: none !important;
+    }
+  }
+
+  .cms-login-status {
+    min-height: 0 !important;
+    font-size: 0 !important;
+    box-shadow: inset -1px -1px 0 var(--cms-border-colour)  !important;
+
+    &__profile-link,
+    &__logout-link {
+      font-size: 14px !important;
+      position: relative !important;
+      display: inline-block !important;
+      vertical-align: middle;
+      min-height: 52px !important;
+      height: auto !important;
+      line-height: 50px !important;
+      text-transform: capitalize !important;
+      color: var(--cms-text-colour) !important;
+      background-color: transparent !important;
+
+      &:before {
+        font-size: inherit !important;
+        line-height: inherit !important;
+      }
+
+      span {
+        width: 100%;
+        padding-left: 0;
+      }
+
+      i {
+        position: relative !important;
+        display: inline-block !important;
+        vertical-align: middle !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        margin-bottom: -1px;
+      }
+
+      * {
+        color: inherit !important;
+        display: inline-block !important;
+        line-height: inherit !important;
+        width: auto !important;
+        height: auto !important;
+        vertical-align: middle !important;
+        opacity: 1 !important;
+      }
+    }
+
+    &__profile-link {
+      padding-left: 25px !important;
+      width: 80% !important;
+
+      span {
+        margin-top: -1px;
+        font-weight: 500;
+      }
+    }
+
+    &__logout-link {
+      width: 20% !important;
+      text-align: center !important;
+    }
+  }
+
+  a {
+    i {
+      padding-left: 0 !important;
+    }
+  }
+
+  .menu__icon {
+    left: 0 !important;
+    width: 20px !important;
+    margin-top: 0 !important;
+    text-align: center !important;
+
+    &:before {
+      position: relative;
+      z-index: 1;
+      line-height: 30px !important;
+      color: var(--cms-text-colour);
+    }
+  }
+
+  &__list {
+    padding: 10px;
+
+    li {
+      margin-bottom: 10px !important;
+
+      &.current {
+        a {
+          color: var(--cms-background-colour--dark);
+          background-color: var(--cms-accent-colour);
+
+          &:hover,
+          &:focus {
+            color: var(--cms-background-colour--dark);
+            background-color: var(--cms-accent-colour)!important;
+          }
+        }
+
+        .menu__icon {
+          &:before {
+            color: var(--cms-background-colour--dark) !important;
+          }
+        }
+      }
+
+      a {
+        min-height: 0 !important;
+        padding: 0 0 0 15px !important;
+        text-align: left !important;
+        border-radius: 10px;
+        color: var(--cms-text-colour);
+        background-color: var(--cms-background-colour--dark);
+        box-shadow: none!important;
+        transition: background-color .2s ease;
+
+        &:hover,
+        &:focus {
+          color: var(--cms-text-colour);
+          background-color: var(--cms-background-colour--light)!important;
+        }
+
+        span {
+          display: inline-block !important;
+          vertical-align: middle !important;
+          position: relative !important;
+          left: 0 !important;
+          margin-left: 0 !important;
+        }
+
+        .text {
+          padding: 15px !important;
+          text-transform: capitalize;
+          font-weight: 500;
+        }
+      }
+
+      .icon-silverstripe-redirectedurls-admin-redirectedurladmin {
+        background: none !important;
+
+        &:before {
+          content: '@';
+          font-family: silverstripe !important;
+          font-style: normal !important;
+          font-weight: 400 !important;
+          font-variant: normal !important;
+          text-transform: none !important;
+          font-size: 17px;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+
+        }
+      }
+    }
+  }
+
+  .cms-panel-toggle {
+    .cms-help__toggle,
+    .sticky-toggle,
+    .toggle-collapse,
+    .toggle-expand {
+      display: none!important;
+    }
+  }
+
+  .chosen-single {
+    background-color: var(--cms-background-colour) !important;
+    border-color: var(--cms-border-colour) !important;
+  }
+
+  .chosen-drop {
+    border-color: var(--cms-border-colour) !important;
+    background-color: var(--cms-background-colour) !important;
+
+    .active-result {
+      background-color: var(--cms-background-colour) !important;
+    }
+  }
+}
+
+.cms-mobile-menu-toggle-wrapper {
+  padding: 10px;
+}
+
+.cms-mobile-menu-toggle {
+  width: 32px;
+  height: 32px;
+  background-color: var(--cms-accent-colour);
+  border-radius: 5px;
+
+  span {
+    background-color: var(--cms-text-colour);
+  }
+}
+
+.cms-menu .cms-login-status {
+  box-shadow: inset -1px -1px 0 var(--cms-border-colour) !important;
+}
+
+.cms-menu .cms-panel-content {
+  background: transparent !important;
+}

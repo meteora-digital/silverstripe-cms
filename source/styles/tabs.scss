@@ -1,0 +1,48 @@
+form {
+  .cms-content-fields {
+    .nav-tabs.ui-widget-header {
+      .nav-item {
+        padding: 10px 5px 10px 0 !important;
+        margin-left: 0;
+        margin-right: 5px;
+
+        .nav-link {
+          padding: 0 !important;
+          border-width: 0;
+
+          &.active {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .tab-content {
+      .nav-tabs.ui-widget-header {
+        .nav-link {
+          padding: 5px 15px !important;
+          border-radius: 5px;
+          // background-color: var(--light);
+          transition:
+            color .3s ease,
+            background-color .3s ease;
+
+          &.active {
+            font-weight: 400;
+            color: var(--cms-text-colour);
+            // background-color: var(--dark);
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav-tabs {
+  border-color: var(--cms-border-colour) !important;
+}
+
+.nav-link,
+.ui-tabs-anchor {
+  color: var(--cms-text-colour) !important;
+}

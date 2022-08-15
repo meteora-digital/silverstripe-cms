@@ -1,0 +1,273 @@
+select {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid var(--cms-border-colour) !important;
+}
+
+.chosen-container {
+  .chosen-single {
+    background-image: none !important;
+
+    b {
+      background-position: 5px 8px !important;
+    }
+  }
+
+  .chosen-results {
+    padding: 5px !important;
+    margin: 0 !important;
+    border: 0 !important;
+
+    li {
+      border-radius: 5px !important;
+      background-image: none !important;
+      margin-bottom: 3px !important;
+      transition: background-color .2s ease;
+
+      &.highlighted {
+        background: none!important;
+        color: var(--cms-background-colour) !important;
+        background-color: var(--cms-accent-colour) !important;
+      }
+    }
+  }
+}
+
+.chosen-container-active {
+
+  .chosen-single,
+  .chosen-drop {
+    border-color: var(--cms-border-colour) !important;
+  }
+
+  &.chosen-with-drop {
+    .chosen-single {
+      border-bottom-left-radius: 0 !important;
+    }
+  }
+}
+
+.treedropdownfield__option-button {
+  display: block!important;
+  border: 0!important;
+  border-radius: 5px!important;
+  padding: 0!important;
+  background-color: var(--cms-accent-colour) !important;
+
+  .treedropdownfield__option-count-icon {
+    display: inline-block!important;
+    vertical-align: middle!important;
+    line-height: 20px!important;
+    color: var(--cms-text-colour)!important;
+    height: auto!important
+  }
+}
+
+.Select-menu-outer {
+  border-color: var(--cms-accent-colour) !important;
+}
+
+.Select.is-focused  > .Select-control{
+  border-color: var(--cms-accent-colour)!important;
+}
+
+.treedropdownfield__breadcrumbs {
+  color: var(--cms-background-colour)!important;
+  background-color: var(--cms-accent-colour) !important;
+}
+
+.treedropdownfield__breadcrumbs-button {
+  height: 20px!important
+}
+
+.chosen-container {
+  .chosen-single {
+    > span {
+      &:before {
+        color: var(--cms-text-colour)!important;
+      }
+    }
+
+    b {
+      background-position: 5px 3px !important;
+    }
+  }
+}
+
+
+.ss-gridfield-add-new-multi-class,
+.form-group {
+  .chosen-container {
+    .chosen-single {
+      b {
+        background-position: 5px 8px !important;
+      }
+    }
+  }
+}
+
+.toolbar--south {
+  .chosen-container {
+    .chosen-single {
+      b {
+        background-position: 5px 5px !important;
+      }
+    }
+  }
+}
+
+.toolbar--south > .btn-toolbar > .preview-selector {
+  max-width: 100px!important;
+}
+
+.chosen-choices {
+  background-image: none !important;
+  background-color: var(--cms-background-colour--light) !important;
+  border-color: var(--cms-border-colour) !important;
+  color: var(--cms-text-colour) !important;
+}
+
+.chosen-choices li.search-field input[type="text"] {
+  color: var(--cms-text-colour) !important;
+}
+
+.chosen-results {
+  background: transparent!important;
+
+  .active-result {
+    background-color: var(--cms-background-colour--light) !important;
+    border-color: var(--cms-border-colour) !important;
+    color: var(--cms-text-colour) !important;
+
+
+    &.highlighted {
+      background-color: var(--cms-background-colour--dark) !important;
+      color: var(--cms-text-colour) !important;
+    }
+
+    &.result-selected {
+      background-color: var(--cms-accent-colour) !important;
+      color: var(--cms-background-colour) !important;
+    }
+  }
+}
+
+.cms-content-controls .preview-selector .chosen-container-active .chosen-single,
+.toolbar--south .preview-selector .chosen-container-active .chosen-single {
+  background-color: var(--cms-background-colour--dark) !important;
+  border-color: var(--cms-border-colour) !important;
+  color: var(--cms-text-colour) !important;
+}
+
+.chosen-drop {
+  background: none!important;
+  background-color: var(--cms-background-colour--light) !important;
+  border-color: var(--cms-border-colour) !important;
+
+  * {
+    color: var(--cms-text-colour) !important;
+  }
+
+  li {
+
+    &.result-selected,
+    &.highlighted {
+      color: var(--cms-background-colour) !important;
+    }
+
+    &.result-selected {
+      background-color: var(--cms-accent-colour) !important;
+    }
+  }
+
+  .no-results {
+    color: var(--cms-text-colour) !important;
+    background-color: var(--cms-background-colour) !important;
+  }
+}
+
+.search-choice {
+  box-shadow: none !important;
+  background-image: none !important;
+  // background-color: var(--cms-background-colour--dark)!important;
+  background-color: var(--cms-accent-colour) !important;
+  border-color: var(--cms-border-colour) !important;
+  // color: var(--cms-text-colour)!important;
+  color: var(--cms-background-colour--dark) !important;
+}
+
+.toolbar--south {
+
+  .ui-tabs-anchor,
+  .preview-selector .chosen-single {
+
+    &:hover {
+      background-color: var(--cms-background-colour--light) !important;
+    }
+  }
+}
+
+.preview-selector .chosen-single {
+
+  span,
+  &:before {
+    color: var(--cms-text-colour) !important;
+  }
+}
+
+.chosen-container-single {
+  .chosen-single {
+    border-color: var(--cms-border-colour) !important;
+
+    span {
+      color: var(--cms-text-colour) !important;
+    }
+  }
+}
+
+.btn-toolbar {
+  .chosen-drop {
+    li {
+
+      &,
+      &:before {
+        color: var(--cms-text-colour) !important;
+      }
+
+      &:not(.result-selected) {
+        background-color: var(--cms-background-colour) !important;
+
+        &.highlighted {
+          color: var(--cms-text-colour) !important;
+          background-color: var(--cms-background-colour--dark) !important;
+        }
+      }
+
+      &.result-selected {
+        color: var(--cms-background-colour) !important;
+      }
+    }
+  }
+}
+
+.Select-control {
+  background-color: var(--cms-background-colour--dark) !important;
+  border-color: var(--cms-border-colour) !important;
+  color: var(--cms-text-colour) !important;
+}
+
+.Select-menu-outer,
+.treedropdownfield__option-button,
+.treedropdownfield__option-count-icon {
+  @media(prefers-color-scheme: dark) {
+    filter: invert(100%);
+  }
+}
+
+.Select-menu-outer {
+  border-color: var(--cms-text-colour) !important;
+}
+
+.Select-value-label {
+  color: var(--cms-text-colour) !important;
+}

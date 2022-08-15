@@ -1,0 +1,118 @@
+
+.ui-dialog {
+  .linkfield-dialog {
+    .btn-toolbar {
+      .btn {
+        background-color: var(--cms-accent-colour)!important;
+        color: var(--cms-background-colour);
+      }
+    }
+  }
+}
+
+.mce-btn.mce-primary {
+  background-color: var(--cms-accent-colour) !important;
+  color: var(--cms-text-colour);
+}
+
+.btn {
+  border-radius: 5px;
+  border: 0;
+
+  &.btn-primary {
+    color: var(--cms-text-colour);
+    background-color: var(--cms-accent-colour)!important;
+    opacity: 1;
+    transition: opacity .2s ease;
+
+    &:hover,
+    &:focus {
+      opacity: .8;
+    }
+  }
+}
+
+.btn-outline-primary {
+  color: var(--cms-accent-colour)!important;
+
+  &:hover,
+  &:focus {
+    background-color: transparent!important;
+  }
+}
+
+.btn-group .btn-primary {
+  border-left: 0!important;
+}
+
+.ss-gridfield-add-new-multi-class {
+  .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    &:before {
+      line-height: 25px !important;
+    }
+  }
+}
+
+#preview-states {
+  .state-name {
+    box-shadow: none!important;
+    background-image: none!important;
+
+    &.active {
+      background-color: var(--cms-accent-colour);
+    }
+  }
+}
+
+.btn-secondary {
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    background-color: var(--cms-background-colour--dark) !important;
+  }
+}
+
+.btn-outline-secondary {
+  background-color: var(--cms-background-colour--light) !important;
+
+  &.action_gridfield_relationadd {
+    border: 1px solid var(--cms-border-colour);
+    margin-left: -4px !important;
+  }
+
+  &.disabled,
+  &:disabled {
+    border: 1px solid transparent !important;
+    background-color: transparent !important;
+  }
+
+  &:hover {
+    border-color: var(--cms-border-colour) !important;
+    color: var(--cms-accent-colour) !important;
+
+    &.disabled,
+    &:disabled {
+      background-color: transparent !important;
+      border: 1px solid transparent !important;
+      color: var(--cms-text-colour) !important;
+    }
+  }
+}
+
+.btn-outline-secondary {
+  color: var(--cms-text-colour) !important;
+}
+
+.btn.btn-primary {
+  color: var(--cms-background-colour) !important;
+}
+
+.btn:not(:disabled):not(.disabled).active,
+.btn:not(:disabled):not(.disabled):active {
+  box-shadow: none!important;
+  background-color: var(--cms-background-colour--light) !important;
+}
