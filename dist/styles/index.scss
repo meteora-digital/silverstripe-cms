@@ -1090,12 +1090,12 @@ ul.IconField {
     label {
       position: relative;
       display: block;
-      border-radius: 50%;
+      border-radius: 3px;
       cursor: pointer;
       width: 100%;
       background-color: var(--cms-background-colour);
       padding-bottom: 100%;
-      // box-shadow: inset 0 0 0 2px rgba($black, .3);
+      box-shadow: inset 0 0 0 2px var(--cms-border-colour);
       transition: background-color 0.3s 0s ease;
 
       &:hover {
@@ -1106,8 +1106,10 @@ ul.IconField {
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 100%!important;
-        height: auto;
+        width: 75% !important;
+        height: 75% !important;
+        object-fit: contain;
+        object-position: center;
         transform: translate(-50%, -50%);
       }
     }
