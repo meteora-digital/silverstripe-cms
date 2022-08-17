@@ -1583,6 +1583,15 @@ select {
     background: var(--cms-background-colour--dark) !important;
   }
 }
+
+.cms-tree.jstree span.badge.status-modified,
+.jstree .status-modified>.jstree-clicked,
+.jstree .status-modified>.jstree-hovered,
+.cms-tree.jstree span.badge.status-addedtodraft,
+.jstree .status-addedtodraft>.jstree-clicked,
+.jstree .status-addedtodraft>.jstree-hovered {
+  background-color: var(--cms-background-colour--dark);
+}
 .step-label .flyout {
   color: var(--cms-accent-colour)!important;
 }
