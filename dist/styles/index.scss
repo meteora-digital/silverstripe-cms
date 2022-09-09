@@ -1000,8 +1000,13 @@ ul.colorpalette {
     overflow: visible !important;
   }
 
+  li {
+    label {
+      outline: 1px solid var(--cms-border-colour)!important;
+    }
+  }
+
   label {
-    outline: 2px solid var(--cms-border-colour);
 
     span {
       display: none;
