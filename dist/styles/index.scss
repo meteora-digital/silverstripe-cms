@@ -968,8 +968,8 @@ ul.colorpalette {
   li {
     label {
       position: relative;
-      border-radius: .5rem;
-      outline: 2px solid #ced5e1!important;
+      // border-radius: .5rem;
+      // outline: 2px solid #ced5e1!important;
     }
 
     input[value="none"],
@@ -1000,9 +1000,11 @@ ul.colorpalette {
     overflow: visible !important;
   }
 
-  li {
-    label {
-      outline: 1px solid var(--cms-border-colour)!important;
+  ul.colorpalette {
+    li {
+      label {
+        outline: 1px solid var(--cms-border-colour)!important;
+      }
     }
   }
 
