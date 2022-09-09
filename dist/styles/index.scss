@@ -1002,6 +1002,9 @@ ul.colorpalette {
 
   ul.colorpalette {
     li {
+      display: inline-block;
+      float: none!important;
+
       label {
         outline: 1px solid var(--cms-border-colour)!important;
       }
