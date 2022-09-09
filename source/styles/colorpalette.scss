@@ -28,3 +28,37 @@ ul.colorpalette {
     }
   }
 }
+
+.colorpalette {
+  .form__field-holder,
+  ul,
+  li {
+    overflow: visible !important;
+  }
+
+  label {
+    outline: 2px solid var(--cms-border-colour);
+
+    span {
+      display: none;
+      position: absolute;
+      z-index: 100;
+      top: -5px;
+      left: -5px;
+      padding: 0 4px;
+      border-radius: 2px;
+      font-size: 1rem;
+      white-space: nowrap;
+      text-transform: capitalize;
+      border: 1px solid var(--cms-border-colour);
+      background-color: var(--cms-background-colour--dark);
+      color: var(--cms-text-colour);
+    }
+
+    &:hover {
+      span {
+        display: block;
+      }
+    }
+  }
+}
