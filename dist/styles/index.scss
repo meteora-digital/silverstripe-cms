@@ -694,6 +694,10 @@ a .jstree-pageicon,
   border-color: var(--cms-border-colour) !important;
   color: var(--cms-text-colour) !important;
 }
+
+.cms .gridfield-icon.published i {
+  color: var(--cms-accent-colour) !important;
+}
 @mixin cms-logo($url, $width, $height) {
   .cms-sitename {
     &:before {
@@ -1578,6 +1582,29 @@ select {
 
 .Select-value-label {
   color: var(--cms-text-colour) !important;
+}
+
+.Select-control {
+  .Select-input {
+    input {
+      color: var(--cms-text-colour) !important;
+    }
+  }
+
+  .Select-value {
+    border-color: #000 !important;
+    background-color: var(--cms-accent-colour) !important;
+  }
+
+  .Select-value-icon,
+  .Select-value-label {
+    border-color: #000 !important;
+    color: var(--cms-background-colour) !important;
+  }
+}
+
+.search-choice {
+  border-color: #000 !important;
 }
 .cms-tree {
   ul {
