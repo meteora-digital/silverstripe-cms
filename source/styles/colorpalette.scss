@@ -84,6 +84,10 @@ ul.colorpalette {
       margin-bottom: 10px;
       margin-right: 10px;
       border-radius: 1px;
+
+      &:after {
+        font-size: 14px;
+      }
     }
   }
 }
