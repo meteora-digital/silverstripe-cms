@@ -71,3 +71,9 @@ textarea {
 [data-name="SilverStripe-CMS-Model-SiteTree"] .col-action_SetOrderFoundHide input {
   -webkit-appearance: auto!important;
 }
+
+.uploadfield-item__complete-icon {
+  &:after {
+    color: var(--cms-accent-colour);
+  }
+}

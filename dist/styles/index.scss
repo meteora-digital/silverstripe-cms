@@ -1256,6 +1256,12 @@ textarea {
 [data-name="SilverStripe-CMS-Model-SiteTree"] .col-action_SetOrderFoundHide input {
   -webkit-appearance: auto!important;
 }
+
+.uploadfield-item__complete-icon {
+  &:after {
+    color: var(--cms-accent-colour);
+  }
+}
 a.URL-link,
 .showOnClick a,
 .uploadfield__upload-button,
@@ -1603,7 +1609,7 @@ select {
   color: var(--cms-text-colour) !important;
 }
 
-.Select-control {
+.Select--multi {
   .Select-input {
     input {
       color: var(--cms-text-colour) !important;
