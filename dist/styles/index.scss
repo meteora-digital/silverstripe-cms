@@ -1259,7 +1259,7 @@ textarea {
 
 .uploadfield-item__complete-icon {
   &:after {
-    color: var(--cms-accent-colour);
+    color: var(--cms-accent-colour)!important;
   }
 }
 a.URL-link,
