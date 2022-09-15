@@ -1,0 +1,21 @@
+.mce-container {
+  &.mce-inline-toolbar {
+    background-color: var(--cms-background-colour--dark);
+    border-radius: 5px;
+    // overflow: hidden;
+
+    &.mce-arrow-up {
+      .mce-container-body {
+
+        // &:before,
+        &:after {
+          border-bottom-color: var(--cms-background-colour);
+        }
+      }
+    }
+  }
+
+  .mce-container-body {
+    background-color: transparent !important;
+  }
+}
