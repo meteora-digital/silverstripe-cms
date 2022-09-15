@@ -4,15 +4,33 @@
     border-radius: 5px;
     // overflow: hidden;
 
-    // &.mce-arrow-up {
+    &.mce-arrow-up {
       .mce-container-body {
+
+        &:before {
+          border-bottom-color: transparent;
+        }
 
         // &:before,
         &:after {
           border-bottom-color: var(--cms-background-colour);
         }
       }
-    // }
+    }
+
+    &:not(.mce-arrow-up) {
+      .mce-container-body {
+
+        &:before {
+          border-bottom-color: var(--cms-background-colour);
+        }
+
+        // &:before,
+        &:after {
+          border-bottom-color: transparent;
+        }
+      }
+    }
   }
 
   .mce-container-body {
