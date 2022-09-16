@@ -12,10 +12,9 @@
 
 .mce-btn.mce-primary {
   background-color: var(--cms-accent-colour) !important;
-  color: var(--cms-background-colour);
 
-  .mce-text {
-    color: inherit !important;
+  .mce-txt {
+    color: var(--cms-background-colour)!important;
   }
 }
 

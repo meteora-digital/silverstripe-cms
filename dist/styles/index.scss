@@ -144,10 +144,9 @@ a.breadcrumb__item-title {
 
 .mce-btn.mce-primary {
   background-color: var(--cms-accent-colour) !important;
-  color: var(--cms-background-colour);
 
-  .mce-text {
-    color: inherit !important;
+  .mce-txt {
+    color: var(--cms-background-colour)!important;
   }
 }
 
@@ -1747,32 +1746,27 @@ form {
   &.mce-inline-toolbar {
     background-color: var(--cms-background-colour--dark);
     border-radius: 5px;
-    // overflow: hidden;
 
     &.mce-arrow-up {
       .mce-container-body {
-
         &:before {
-          border-bottom-color: transparent;
+          border-top-color: transparent;
         }
 
-        // &:before,
         &:after {
           border-bottom-color: var(--cms-background-colour);
         }
       }
     }
 
-    &:not(.mce-arrow-up) {
+    &.mce-arrow-down {
       .mce-container-body {
-
         &:before {
-          border-bottom-color: var(--cms-background-colour);
+          border-bottom-color: transparent;
         }
 
-        // &:before,
         &:after {
-          border-bottom-color: transparent;
+          border-top-color: var(--cms-background-colour);
         }
       }
     }

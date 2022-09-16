@@ -2,32 +2,27 @@
   &.mce-inline-toolbar {
     background-color: var(--cms-background-colour--dark);
     border-radius: 5px;
-    // overflow: hidden;
 
     &.mce-arrow-up {
       .mce-container-body {
-
         &:before {
-          border-bottom-color: transparent;
+          border-top-color: transparent;
         }
 
-        // &:before,
         &:after {
           border-bottom-color: var(--cms-background-colour);
         }
       }
     }
 
-    &:not(.mce-arrow-up) {
+    &.mce-arrow-down {
       .mce-container-body {
-
         &:before {
-          border-bottom-color: var(--cms-background-colour);
+          border-bottom-color: transparent;
         }
 
-        // &:before,
         &:after {
-          border-bottom-color: transparent;
+          border-top-color: var(--cms-background-colour);
         }
       }
     }
