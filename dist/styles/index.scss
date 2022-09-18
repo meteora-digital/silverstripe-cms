@@ -746,6 +746,7 @@ a .jstree-pageicon,
 
   &__header {
     background-color: var(--cms-background-colour--dark);
+    box-shadow: inset -1px 0 0 var(--cms-border-colour) !important;
   }
 
   .cms-sitename {
