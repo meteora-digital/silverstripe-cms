@@ -1891,3 +1891,13 @@ form {
 .btn-toolbar {
   border-color: var(--cms-border-colour)!important;
 }
+.form__field-holder {
+  .preview {
+    background-color: transparent !important;
+  }
+
+  .readonly {
+    background-color: var(--cms-background-colour--dark) !important;
+    border-color: var(--cms-border-colour) !important;
+  }
+}
