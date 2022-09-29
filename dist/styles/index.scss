@@ -251,6 +251,29 @@ a.breadcrumb__item-title {
   box-shadow: none!important;
   background-color: var(--cms-background-colour--light) !important;
 }
+
+.toolbar--content .btn-group--circular>.btn,
+.toolbar--content .btn-group--circular>.btn:hover,
+.toolbar--north .btn-group--circular>.btn,
+.toolbar--north .btn-group--circular>.btn:hover,
+.toolbar--south .btn-group--circular>.btn,
+.toolbar--south .btn-group--circular>.btn:hover,
+.toolbar .btn-group--circular>.btn,
+.toolbar .btn-group--circular>.btn:hover {
+  background-color: var(--cms-accent-colour) !important;
+  border-color: var(--cms-accent-colour) !important;
+}
+
+.toolbar--content .btn-group--circular>.btn:before,
+.toolbar--content .btn-group--circular>.btn:hover:before,
+.toolbar--north .btn-group--circular>.btn:before,
+.toolbar--north .btn-group--circular>.btn:hover:before,
+.toolbar--south .btn-group--circular>.btn:before,
+.toolbar--south .btn-group--circular>.btn:hover:before,
+.toolbar .btn-group--circular>.btn:before,
+.toolbar .btn-group--circular>.btn:hover:before {
+  color: var(--cms-background-colour) !important;
+}
 .cms-container {
   color: var(--cms-text-colour);
 }
