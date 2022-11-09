@@ -23,8 +23,5 @@ class ColourPaletteController {
   }
 }
 
-const ColourPalette = new ColourPaletteController();
+exports.ColourPaletteController = ColourPaletteController;
 
-ColourPalette.update();
-
-window.addEventListener('page-updated', () => ColourPalette.update());
