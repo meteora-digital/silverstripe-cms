@@ -1,3 +1,9 @@
+.badge {
+  &.version-status {
+    background-color: var(--cms-background-colour--light);
+    border-color: var(--cms-border-colour);
+  }
+}
 .toast-block-layouts {
 
   .form__field-holder {
