@@ -95,3 +95,28 @@ textarea {
   opacity: .7;
   color: var(--cms-text-colour)!important;
 }
+
+.field input.text,
+.field select,
+.field textarea,
+.form-control {
+  &::-webkit-input-placeholder {
+    opacity: .5!important;
+    color: var(--cms-text-colour)!important;
+  }
+
+  &:-moz-placeholder {
+    opacity: .5!important;
+    color: var(--cms-text-colour)!important;
+  }
+
+  &::-moz-placeholder {
+    opacity: .5!important;
+    color: var(--cms-text-colour)!important;
+  }
+
+  &:-ms-input-placeholder {
+    opacity: .5!important;
+    color: var(--cms-text-colour)!important;
+  }
+}
