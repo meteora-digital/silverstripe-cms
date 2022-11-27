@@ -127,6 +127,14 @@
   }
 }
 
+.grid-field__icon-action,
+.grid-field__icon-action[class*="font-icon-"] {
+  &:before {
+    color: var(--cms-accent-colour)!important;
+    transition: color .3s ease;
+  }
+}
+
 .breadcrumbs-wrapper {
   a.cms-panel-link {
     color: var(--cms-accent-colour)!important;
@@ -1837,26 +1845,26 @@ form {
   color: var(--cms-text-colour) !important;
 }
 
-.ui-tabs-nav {
-  &.cms-tabset-nav-primary {
-    .nav-item {
-      .nav-link {
-        &:hover {
-          border-color: var(--cms-border-colour) !important;
-        }
-      }
+// .ui-tabs-nav {
+//   &.cms-tabset-nav-primary {
+//     .nav-item {
+//       .nav-link {
+//         &:hover {
+//           border-color: var(--cms-border-colour) !important;
+//         }
+//       }
 
-      &.ui-state-active {
-        .nav-link {
-          &,
-          &:hover {
-            border-color: var(--cms-text-colour) !important;
-          }
-        }
-      }
-    }
-  }
-}
+//       &.ui-state-active {
+//         .nav-link {
+//           &,
+//           &:hover {
+//             border-color: var(--cms-text-colour) !important;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 .nav-tabs {
   .nav-item {
@@ -1872,6 +1880,27 @@ form {
       }
     }
   }
+}
+
+.ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-default .nav-link:hover,
+.ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-default .ui-tabs-anchor:hover,
+.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-default .nav-link:hover,
+.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-default .ui-tabs-anchor:hover,
+.ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-default .nav-link:hover,
+.ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-default .ui-tabs-anchor:hover {
+  border-color: var(--cms-border-colour) !important;
+}
+
+.ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-active .nav-link,
+.ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-active .nav-link:hover,
+.ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-active a,
+.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-active .nav-link,
+.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-active .nav-link:hover,
+.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-active a,
+.ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-active .nav-link,
+.ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-active .nav-link:hover,
+.ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-active a {
+  border-color: var(--cms-text-colour) !important;
 }
 .mce-container {
   &.mce-inline-toolbar {

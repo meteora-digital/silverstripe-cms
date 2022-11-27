@@ -20,3 +20,11 @@
     }
   }
 }
+
+.grid-field__icon-action,
+.grid-field__icon-action[class*="font-icon-"] {
+  &:before {
+    color: var(--cms-accent-colour)!important;
+    transition: color .3s ease;
+  }
+}
