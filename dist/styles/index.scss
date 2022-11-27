@@ -1309,6 +1309,7 @@ textarea {
 
 .uploadfield__add-button,
 .uploadfield__upload-button {
+  &,
   &:hover {
     color: var(--cms-link-colour)!important;
   }
