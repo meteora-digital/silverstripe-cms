@@ -122,6 +122,32 @@ const toolbar = document.querySelector('.toolbar.toolbar--south.cms-panel-toggle
 toolbar.appendChild(Darkmode.button);
 ```
 
+## FieldNames Usage
+
+```js
+/* ---------------------------------------------
+Import FieldNames
+--------------------------------------------- */
+
+import { FieldNamesController } from '@meteora-digital/silverstripe-cms';
+
+/* ---------------------------------------------
+Document Setup
+--------------------------------------------- */
+
+const FieldController = new FieldNamesController;
+
+// Add $Variable names as titles on field inputs
+FieldController.on('update', (label) => {
+  const title = label.id.split('_');
+  label.title = '$' + title[title.length - 1];
+});
+
+// If you're using the PageObserverController
+window.addEventListener('page-updated', () => FieldController.update());
+
+```
+
 ## Page Observer Usage
 
 The page observer is a mutation observer that can be used to check for changes to the page content, for example after an ajax request. This can help if you need to retarget DOM elements with custom JS.
