@@ -1310,6 +1310,10 @@ textarea {
 .sortable-item {
   border-color: var(--cms-border-colour)!important;
 }
+
+.form__field-description {
+  color: var(--cms-link-colour)!important;
+}
 a.URL-link,
 .showOnClick a,
 .uploadfield__upload-button,
