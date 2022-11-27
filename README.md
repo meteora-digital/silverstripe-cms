@@ -135,7 +135,10 @@ import { FieldNamesController } from '@meteora-digital/silverstripe-cms';
 Document Setup
 --------------------------------------------- */
 
-const FieldController = new FieldNamesController;
+const FieldController = new FieldNamesController({
+    include: ['.field'],
+    exclude: [],
+});
 
 // Add $Variable names as titles on field inputs
 FieldController.on('update', (label) => {
@@ -145,7 +148,6 @@ FieldController.on('update', (label) => {
 
 // If you're using the PageObserverController
 window.addEventListener('page-updated', () => FieldController.update());
-
 ```
 
 ## Page Observer Usage
