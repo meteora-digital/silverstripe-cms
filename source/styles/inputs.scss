@@ -125,7 +125,8 @@ textarea {
   display: inline;
 }
 
-.editor__specs {
+.editor__specs,
+.uploadfield-item__specs {
   opacity: .7;
   color: var(--cms-text-colour)!important;
 }
