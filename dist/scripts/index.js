@@ -78,7 +78,7 @@ class FieldNamesController {
     }, config);
   }
 
-  update(func) {
+  update() {
     clearTimeout(this.timeout['update']);
     this.timeout['update'] = setTimeout(() => {
       // find all the field elements on the page
