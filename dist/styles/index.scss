@@ -1311,6 +1311,7 @@ textarea {
   border-color: var(--cms-border-colour)!important;
 }
 
+.description,
 .form__field-description {
   opacity: .7;
   color: var(--cms-text-colour)!important;
@@ -1791,6 +1792,114 @@ form {
 .nav-link,
 .ui-tabs-anchor {
   color: var(--cms-text-colour) !important;
+}
+
+.ui-tabs {
+  .cms-content-header-tabs {
+    .ui-tabs-nav {
+      .ui-state-active {
+        .nav-link {
+          display: block;
+
+          &:hover {
+            display: block;
+          }
+        }
+
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .ui-tabs-nav.cms-tabset-nav-primary {
+    .ui-state-active {
+      .nav-link {
+        display: block;
+
+        &:hover {
+          display: block;
+        }
+      }
+
+      a {
+        display: block;
+      }
+    }
+  }
+}
+
+.ui-tabs {
+  .cms-content-header-tabs {
+    .ui-tabs-nav {
+      .ui-state-default {
+        .nav-link {
+          &:hover {
+            border-color: var(--cms-border-colour) !important;
+          }
+        }
+
+        .ui-tabs-anchor {
+          &:hover {
+            border-color: var(--cms-border-colour) !important;
+          }
+        }
+      }
+    }
+  }
+
+  .ui-tabs-nav.cms-tabset-nav-primary {
+    .ui-state-default {
+      .nav-link {
+        &:hover {
+          border-color: var(--cms-border-colour) !important;
+        }
+      }
+
+      .ui-tabs-anchor {
+        &:hover {
+          border-color: var(--cms-border-colour) !important;
+        }
+      }
+    }
+  }
+}
+
+.ui-tabs.cms-tabset-primary {
+  .ui-tabs-nav {
+    .ui-state-default {
+      .nav-link {
+        &:hover {
+          border-color: var(--cms-border-colour) !important;
+        }
+      }
+
+      .ui-tabs-anchor {
+        &:hover {
+          border-color: var(--cms-border-colour) !important;
+        }
+      }
+    }
+  }
+}
+
+.ui-tabs.cms-tabset-primary {
+  .ui-tabs-nav {
+    .ui-state-active {
+      .nav-link {
+        border-color: var(--cms-text-colour) !important;
+
+        &:hover {
+          border-color: var(--cms-text-colour) !important;
+        }
+      }
+
+      a {
+        border-color: var(--cms-text-colour) !important;
+      }
+    }
+  }
 }
 .mce-container {
   &.mce-inline-toolbar {
