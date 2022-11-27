@@ -1,6 +1,6 @@
 {
     "name": "@meteora-digital/silverstripe-cms",
-    "version": "4.1.12",
+    "version": "4.1.13",
     "description": "Styles and scripts to make the Silverstripe cms look awesome.",
     "main": "dist/scripts/index.js",
     "scripts": {
