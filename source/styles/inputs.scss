@@ -125,8 +125,17 @@ textarea {
   display: inline;
 }
 
+.form__field-holder input.readonly,
+.form__field-holder p.readonly,
+.form__field-holder span.readonly,
+.readonly .form__field-holder > div {
+  background-color: var(--cms-border-colour)!important;
+  border-color: var(--cms-border-colour)!important;
+}
+
 .editor__specs,
 .uploadfield-item__specs {
+  display: inline;
   opacity: .7;
   color: var(--cms-text-colour)!important;
 }
