@@ -1312,7 +1312,8 @@ textarea {
 }
 
 .form__field-description {
-  color: var(--cms-link-colour)!important;
+  opacity: .7;
+  color: var(--cms-text-colour)!important;
 }
 a.URL-link,
 .showOnClick a,
