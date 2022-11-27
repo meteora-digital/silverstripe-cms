@@ -1,4 +1,4 @@
-class FieldNames extends Classy {
+class FieldNamesController {
   constructor(config = {}) {
     this.events = {};
     this.labels = [];

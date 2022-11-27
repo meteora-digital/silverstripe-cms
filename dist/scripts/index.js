@@ -65,7 +65,7 @@ class DarkmodeController {
 
 exports.DarkmodeController = DarkmodeController;
 
-class FieldNames extends Classy {
+class FieldNamesController {
   constructor(config = {}) {
     this.events = {};
     this.labels = []; // A throttle
