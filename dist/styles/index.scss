@@ -603,7 +603,6 @@ a .jstree-pageicon,
 }
 
 .mce-panel {
-  background-color: var(--cms-background-colour--light) !important;
   border-color: var(--cms-border-colour) !important;
 }
 
@@ -1143,6 +1142,29 @@ ul.colorpalette {
       &:after {
         font-size: 14px;
       }
+    }
+  }
+}
+.mce-panel {
+  @media (prefers-color-scheme: light) {
+    background-color: var(--cms-background-colour--dark) !important;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--cms-background-colour--light) !important;
+  }
+}
+
+body {
+  &[data-darkmode="on"] {
+    .mce-panel {
+      background-color: var(--cms-background-colour--light) !important;
+    }
+  }
+
+  &[data-darkmode="off"] {
+    .mce-panel {
+      background-color: var(--cms-background-colour--dark) !important;
     }
   }
 }
