@@ -413,9 +413,9 @@ a .jstree-pageicon,
 .popover-actions-simulate,
 .search-box__enter,
 .search-form__wrapper {
-  background-color: var(--cms-background-colour) !important;
   border-color: var(--cms-border-colour) !important;
   color: var(--cms-text-colour) !important;
+  overflow: hidden;
 }
 
 .message {
