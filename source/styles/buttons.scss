@@ -187,3 +187,16 @@ input[type="datetime-local"],
 .btn:disabled {
   filter: grayscale(1);
 }
+
+.popover-actions-simulate,
+.search-box__enter {
+  background-color: var(--cms-border-colour) !important;
+}
+
+.popover-actions-simulate {
+  border-radius: 3px !important;
+}
+
+.btn.btn-outline-secondary {
+  background-color: var(--cms-border-colour) !important;
+}

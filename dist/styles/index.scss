@@ -333,6 +333,19 @@ input[type="datetime-local"],
 .btn:disabled {
   filter: grayscale(1);
 }
+
+.popover-actions-simulate,
+.search-box__enter {
+  background-color: var(--cms-border-colour) !important;
+}
+
+.popover-actions-simulate {
+  border-radius: 3px !important;
+}
+
+.btn.btn-outline-secondary {
+  background-color: var(--cms-border-colour) !important;
+}
 .cms-container {
   color: var(--cms-text-colour);
 }
@@ -1510,6 +1523,19 @@ a:not([class]) {
   }
 }
 
+.search-form {
+  box-shadow: 0 0 0 1px var(--cms-border-colour) !important;
+  border-radius: 0 0 5px 5px !important;
+}
+
+.search-form__wrapper {
+  border-radius: inherit !important;
+  background-color: var(--cms-background-colour--dynamic) !important;
+}
+
+.field-group-component__small-holder>.form-group .form__field-label {
+  color: var(--cms-text-colour) !important;
+}
 select {
   padding: 5px;
   border-radius: 3px;

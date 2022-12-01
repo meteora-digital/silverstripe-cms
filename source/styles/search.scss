@@ -1,0 +1,13 @@
+.search-form {
+  box-shadow: 0 0 0 1px var(--cms-border-colour) !important;
+  border-radius: 0 0 5px 5px !important;
+}
+
+.search-form__wrapper {
+  border-radius: inherit !important;
+  background-color: var(--cms-background-colour--dynamic) !important;
+}
+
+.field-group-component__small-holder>.form-group .form__field-label {
+  color: var(--cms-text-colour) !important;
+}
