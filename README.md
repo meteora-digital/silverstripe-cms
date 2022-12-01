@@ -26,6 +26,7 @@ If you're not using the darkmode component, you can simply add:
     --cms-background-colour: #f1f1f1;
     --cms-background-colour--dark: #e9e9e9;
     --cms-background-colour--light: #fefefe;
+    --cms-background-colour--dynamic: #fefefe;
     --cms-border-colour: #bebebe;
     --cms-link-colour: #036cd7;
     --cms-text-colour: #0e0e0e;
@@ -58,8 +59,11 @@ If you are using the darkmode component, I recommend the following setup:
     --cms-accent-colour: #4d9159;
 }
 
+```
+
 Note: The `--cms-background-colour--dynamic` variable is useful when you want to change an element's background colour based on the current darkmode state. For example, in darkmode you may want something to use `--cms-background-colour--light` and in lightmode you may want it to use `--cms-background-colour--dark`. This variable allows for extra control.
 
+```scss
 :root {
   @media (prefers-color-scheme: light) {
     @include light-mode;
