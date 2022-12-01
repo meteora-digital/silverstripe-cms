@@ -162,3 +162,23 @@
 .btn-primary:focus {
   box-shadow: none!important;
 }
+
+input[type="url"],
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="password"],
+input[type="datetime-local"],
+.form-control,
+.field select,
+.field textarea,
+.field input.text,
+.form__field-holder input.readonly,
+.form__field-holder p.readonly,
+.form__field-holder span.readonly,
+.readonly .form__field-holder > div {
+  border-radius: 3px!important;
+  box-shadow: none!important;
+}

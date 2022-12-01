@@ -10,7 +10,7 @@ ul.IconField {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    width: calc(12.5% - 10px);
+    width: calc(20% - 10px);
     margin-bottom: 20px;
 
     input {
@@ -21,7 +21,7 @@ ul.IconField {
 
       &:checked {
         + label {
-          background-color: var(--cms-background-colour--dark);
+          background-color: var(--cms-border-colour);
         }
       }
     }

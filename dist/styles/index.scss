@@ -308,6 +308,26 @@ a.breadcrumb__item-title {
 .btn-primary:focus {
   box-shadow: none!important;
 }
+
+input[type="url"],
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="password"],
+input[type="datetime-local"],
+.form-control,
+.field select,
+.field textarea,
+.field input.text,
+.form__field-holder input.readonly,
+.form__field-holder p.readonly,
+.form__field-holder span.readonly,
+.readonly .form__field-holder > div {
+  border-radius: 3px!important;
+  box-shadow: none!important;
+}
 .cms-container {
   color: var(--cms-text-colour);
 }
@@ -1189,7 +1209,7 @@ ul.IconField {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    width: calc(12.5% - 10px);
+    width: calc(20% - 10px);
     margin-bottom: 20px;
 
     input {
@@ -1200,7 +1220,7 @@ ul.IconField {
 
       &:checked {
         + label {
-          background-color: var(--cms-background-colour--dark);
+          background-color: var(--cms-border-colour);
         }
       }
     }
