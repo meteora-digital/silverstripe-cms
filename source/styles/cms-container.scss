@@ -159,7 +159,7 @@ a .jstree-pageicon,
       background-color: transparent !important;
 
       &:hover {
-        background-color: var(--cms-background-colour--light) !important;
+        background-color: var(--cms-background-colour--dynamic) !important;
       }
     }
 
@@ -170,7 +170,7 @@ a .jstree-pageicon,
     td,
     th button {
       &:hover {
-        background-color: var(--cms-background-colour--light) !important;
+        background-color: var(--cms-background-colour--dynamic) !important;
       }
     }
   }
@@ -178,7 +178,7 @@ a .jstree-pageicon,
   thead {
     th button {
       &:hover {
-        background-color: var(--cms-background-colour--light) !important;
+        background-color: var(--cms-background-colour--dynamic) !important;
       }
     }
   }
