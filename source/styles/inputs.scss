@@ -139,3 +139,24 @@ textarea {
   opacity: .7;
   color: var(--cms-text-colour)!important;
 }
+
+.uploadfield-item__thumbnail {
+  border-radius: 0 !important;
+
+  &:not([style]) {
+    position: relative;
+    box-shadow: 0 0 0 1px var(--cms-border-colour);
+    background-color: var(--cms-background-colour--light);
+
+    &:before {
+      content: 'File';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 12px;
+      text-align: center;
+      color: var(--cms-text-colour);
+      transform: translate(-50%, -50%);
+    }
+  }
+}

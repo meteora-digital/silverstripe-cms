@@ -120,6 +120,21 @@
   background-color: var(--cms-background-colour--light) !important;
 }
 
+.toolbar--content .btn--circular,
+.toolbar--north .btn--circular,
+.toolbar--south .btn--circular,
+.toolbar .btn--circular {
+  padding-left: 7px!important;
+  padding-right: 7px!important;
+}
+
+.btn[class*="font-icon-"],
+.dropdown-item[class*="font-icon-"] {
+  &:before {
+    margin-right: 0!important;
+  }
+}
+
 .toolbar--content .btn-group--circular>.btn,
 .toolbar--content .btn-group--circular>.btn:hover,
 .toolbar--north .btn-group--circular>.btn,
@@ -129,7 +144,7 @@
 .toolbar .btn-group--circular>.btn,
 .toolbar .btn-group--circular>.btn:hover {
   background-color: var(--cms-accent-colour) !important;
-  border-color: var(--cms-background-colour--dark) !important;
+  border-color: transparent !important;
 }
 
 .toolbar--content .btn-group--circular>.btn:before,
