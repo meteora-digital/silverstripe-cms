@@ -40,6 +40,7 @@ If you are using the darkmode component, I recommend the following setup:
     --cms-background-colour: #292c47;
     --cms-background-colour--dark: #23263d;
     --cms-background-colour--light: #323657;
+    --cms-background-colour--dynamic: #323657;
     --cms-border-colour: #040406;
     --cms-link-colour: #60a3d5;
     --cms-text-colour: #c7c7c7;
@@ -50,11 +51,14 @@ If you are using the darkmode component, I recommend the following setup:
     --cms-background-colour: #f1f1f1;
     --cms-background-colour--dark: #e9e9e9;
     --cms-background-colour--light: #fefefe;
+    --cms-background-colour--dynamic: #fefefe;
     --cms-border-colour: #bebebe;
     --cms-link-colour: #036cd7;
     --cms-text-colour: #0e0e0e;
     --cms-accent-colour: #4d9159;
 }
+
+Note: The `--cms-background-colour--dynamic` variable is useful when you want to change an element's background colour based on the current darkmode state. For example, in darkmode you may want something to use `--cms-background-colour--light` and in lightmode you may want it to use `--cms-background-colour--dark`. This variable allows for extra control.
 
 :root {
   @media (prefers-color-scheme: light) {
