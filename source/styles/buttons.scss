@@ -126,10 +126,7 @@
 .toolbar .btn--circular {
   padding-left: 7px!important;
   padding-right: 7px!important;
-}
 
-.btn[class*="font-icon-"],
-.dropdown-item[class*="font-icon-"] {
   &:before {
     margin-right: 0!important;
   }
