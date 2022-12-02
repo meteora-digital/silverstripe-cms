@@ -4,3 +4,8 @@
     border-color: var(--cms-border-colour);
   }
 }
+
+.badge-success {
+  background-color: var(--cms-accent-colour) !important;
+  color: var(--cms-background-colour--dark) !important;
+}

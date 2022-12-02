@@ -4,6 +4,11 @@
     border-color: var(--cms-border-colour);
   }
 }
+
+.badge-success {
+  background-color: var(--cms-accent-colour) !important;
+  color: var(--cms-background-colour--dark) !important;
+}
 .toast-block-layouts {
 
   .form__field-holder {
@@ -1161,6 +1166,10 @@ ul.colorpalette {
     }
   }
 }
+.dropdown-menu {
+  color: var(--cms-text-colour) !important;
+  background-color: var(--cms-background-colour--dynamic) !important;
+}
 #Form_EditForm {
   padding-right: 0!important;
 }
@@ -1211,6 +1220,62 @@ ul.colorpalette {
       }
     }
   }
+}
+.text-muted,
+ul.table .history-viewer__row--current .text-muted {
+  color: var(--cms-text-colour--dynamic) !important;
+}
+
+ul.table {
+  color: var(--cms-text-colour) !important;
+}
+
+.history-viewer__close-button,
+.history-viewer__compare-button {
+  color: var(--cms-text-colour) !important;
+  border-color: currentColor !important;
+}
+
+.btn-outline-light:hover {
+  color: var(--cms-background-colour--dark) !important;
+  background-color: var(--cms-text-colour) !important;
+  border-color: var(--cms-text-colour) !important;
+}
+
+.table .history-viewer__row--current,
+.table .history-viewer__row--current:hover {
+  color: var(--cms-text-colour) !important;
+}
+
+.history-viewer__heading,
+.history-viewer__row {
+  border-color: var(--cms-border-colour) !important;
+}
+
+.history-viewer__row {
+  background-color: var(--cms-background-colour--dynamic) !important;
+}
+
+.grid-field__sort.ss-gridfield-sorted-asc::after,
+.grid-field__sort.ss-gridfield-sorted-asc:hover::after,
+.grid-field__sort.ss-gridfield-sorted-desc::after,
+.grid-field__sort.ss-gridfield-sorted-desc:hover::after {
+  color: var(--cms-text-colour) !important;
+}
+
+.gallery__sort .chosen-container-active .chosen-single {
+  outline: none !important;
+  background-color: var(--cms-background-colour--dynamic) !important;
+}
+
+.grid-field__sort.ss-gridfield-sorted-asc::after,
+.grid-field__sort.ss-gridfield-sorted-asc:hover::after,
+.grid-field__sort.ss-gridfield-sorted-desc::after,
+.grid-field__sort.ss-gridfield-sorted-desc:hover::after,
+.grid-field .grid-field__sort:focus,
+.grid-field__sort.ss-gridfield-sorted-asc,
+.grid-field__sort.ss-gridfield-sorted-desc {
+  border-bottom-color: var(--cms-border-colour) !important;
 }
 ul.IconField {
   display: block;
@@ -1446,6 +1511,10 @@ textarea {
       transform: translate(-50%, -50%);
     }
   }
+}
+
+.form__fieldgroup-label {
+  color: var(--cms-text-colour--dynamic)!important;
 }
 a.URL-link,
 .showOnClick a,
