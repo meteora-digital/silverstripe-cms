@@ -421,7 +421,7 @@ input[type="datetime-local"],
 
 .form__field-description,
 .form__field-extra-label {
-  color: #8aa8d9 !important;
+  color: var(--cms-text-colour--light) !important;
 }
 
 .cms-add-form {
@@ -1818,19 +1818,19 @@ select {
   }
 
   .Select-value {
-    border-color: #000 !important;
+    border-color: var(--cms-border-colour) !important;
     background-color: var(--cms-accent-colour) !important;
   }
 
   .Select-value-icon,
   .Select-value-label {
-    border-color: #000 !important;
+    border-color: var(--cms-border-colour) !important;
     color: var(--cms-background-colour) !important;
   }
 }
 
 .search-choice {
-  border-color: #000 !important;
+  border-color: var(--cms-border-colour) !important;
 }
 .cms-tree {
   ul {
@@ -2160,5 +2160,7 @@ $cms-background-colour: #f1f1f1;
   --cms-border-colour: #{darken($cms-background-colour, 20%)};
   --cms-link-colour: #036cd7;
   --cms-text-colour: #{grayscale(invert($cms-background-colour, 100%))};
+  --cms-text-colour--light: #{lighten(grayscale(invert($cms-background-colour, 100%)), 5%)};
+  --cms-text-colour--dark: #{darken(grayscale(invert($cms-background-colour, 100%)), 5%)};
   --cms-accent-colour: #005a92;
 }

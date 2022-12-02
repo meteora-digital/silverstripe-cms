@@ -280,17 +280,17 @@ select {
   }
 
   .Select-value {
-    border-color: #000 !important;
+    border-color: var(--cms-border-colour) !important;
     background-color: var(--cms-accent-colour) !important;
   }
 
   .Select-value-icon,
   .Select-value-label {
-    border-color: #000 !important;
+    border-color: var(--cms-border-colour) !important;
     color: var(--cms-background-colour) !important;
   }
 }
 
 .search-choice {
-  border-color: #000 !important;
+  border-color: var(--cms-border-colour) !important;
 }
