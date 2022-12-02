@@ -421,7 +421,7 @@ input[type="datetime-local"],
 
 .form__field-description,
 .form__field-extra-label {
-  color: var(--cms-text-colour--light) !important;
+  color: var(--cms-text-colour--dynamic) !important;
 }
 
 .cms-add-form {
@@ -2160,7 +2160,6 @@ $cms-background-colour: #f1f1f1;
   --cms-border-colour: #{darken($cms-background-colour, 20%)};
   --cms-link-colour: #036cd7;
   --cms-text-colour: #{grayscale(invert($cms-background-colour, 100%))};
-  --cms-text-colour--light: #{lighten(grayscale(invert($cms-background-colour, 100%)), 5%)};
-  --cms-text-colour--dark: #{darken(grayscale(invert($cms-background-colour, 100%)), 5%)};
+  --cms-text-colour--dynamic: #{lighten(grayscale(invert($cms-background-colour, 100%)), 5%)};
   --cms-accent-colour: #005a92;
 }
