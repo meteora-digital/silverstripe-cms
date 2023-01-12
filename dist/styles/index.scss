@@ -2206,6 +2206,34 @@ form {
 .btn-toolbar {
   border-color: var(--cms-border-colour)!important;
 }
+.ui-dialog {
+  background: var(--cms-background-colour--dynamic) !important;
+  border-color: var(--cms-border-colour) !important;
+}
+
+.ui-icon-closethick {
+  transform: scale(.75);
+}
+
+body {
+  &[data-darkmode="on"] {
+    .ui-dialog {
+      .ui-resizable-handle {
+        filter: invert(1);
+      }
+    }
+  }
+
+  &[data-darkmode="auto"] {
+    @media(prefers-color-scheme: dark) {
+      .ui-dialog {
+        .ui-resizable-handle {
+          filter: invert(1);
+        }
+      }
+    }
+  }
+}
 .form__field-holder {
   .preview {
     background-color: transparent !important;
