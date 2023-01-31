@@ -1589,6 +1589,14 @@ a:not([class]) {
   }
 }
 
+.popover {
+  background-color: var(--cms-background-colour--dynamic) !important;
+  
+  .arrow {
+    border-top-color: var(--cms-background-colour--dynamic) !important;
+  }
+}
+
 .search-form {
   box-shadow: 0 0 0 1px var(--cms-border-colour) !important;
   border-radius: 0 0 5px 5px !important;
