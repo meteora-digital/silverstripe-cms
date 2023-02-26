@@ -419,7 +419,9 @@ a .jstree-pageicon,
 }
 
 .message {
-  color: rgb(60, 60, 60) !important;
+  background-color: var(--cms-background-colour--dynamic) !important;
+  border-color: var(--cms-border-colour) !important;
+  color: var(--cms-text-colour) !important;
 }
 
 .ui-widget-content {
