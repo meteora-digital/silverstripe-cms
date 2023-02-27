@@ -772,9 +772,37 @@ a .jstree-pageicon,
 }
 
 .message {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
   background-color: var(--cms-background-colour--dynamic) !important;
   border-color: var(--cms-border-colour) !important;
   color: var(--cms-text-colour) !important;
+
+  &.warning,
+  &.notice {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: .25;
+    }
+  }
+
+  &.warning {
+    &:before {
+      background-color: #f60;
+    }
+  }
+
+  &.notice {
+    &:before {
+      background-color: #44b744;
+    }
+  }
 }
 
 .ui-widget-content {
