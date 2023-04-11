@@ -129,7 +129,90 @@ class FieldNamesController {
 
 }
 
-exports.FieldNamesController = FieldNamesController;
+exports.FieldNamesController = FieldNamesController; // An array to store the menus in
+
+const menus = [];
+
+const update = () => {
+  // Loop through all the mce menus
+  [...document.querySelectorAll('.mce-menu')].forEach(menu => {
+    // If the menu is in the array, don't add it
+    if (menus.indexOf(menu) > -1) return; // Add the menu to the array
+
+    menus.push(menu); // Loop through all the menu items
+
+    [...menu.querySelectorAll('.mce-text')].forEach(item => {
+      // Find all the inline styles
+      const attribute = item.getAttribute('style') || '';
+      const styles = attribute.split(';'); // convert the styles into an object with key and value
+
+      const properties = styles.reduce((obj, style) => {
+        const [key, value] = style.split(':');
+        obj[key] = value;
+        return obj;
+      }, {}); // If the styles doesnt contain a 'color' property, return
+
+      if (!properties['color']) return; // Add the !important flag to the color property
+
+      properties['color'] = properties['color'] + '!important'; // Add all the properties back to the item style attribute
+
+      item.setAttribute('style', Object.keys(properties).map(key => `${key}: ${properties[key]}`).join(';'));
+    });
+  });
+}; // When the page is updated, update the menus
+
+
+window.addEventListener('page-updated', () => update());
+
+class IconFieldController {
+  constructor(selector = '#Root img') {
+    this.icons = [];
+    this.selector = selector; // A throttle
+
+    this.timeout = {};
+  }
+
+  update() {
+    clearTimeout(this.timeout['update']);
+    this.timeout['update'] = setTimeout(() => {
+      // find all the icons on the page
+      const icons = [...document.querySelectorAll(this.selector)];
+
+      if (icons.length > 0) {
+        // Loop through the wysiwyg elements and inputs and add them to the arrays if they are not already in the array
+        icons.forEach(icon => {
+          // If we haven't already added this icon to the array
+          if (this.icons.indexOf(icon) === -1) {
+            // Add the icon to the array
+            this.icons.push(icon); // if the icon's src is svg extension
+
+            if (icon.src.includes('.svg')) {
+              // new xhr request to get the svg html
+              const xhr = new XMLHttpRequest(); // Open the request
+
+              xhr.open('GET', icon.src, true); // When the request is loaded
+
+              xhr.onload = () => {
+                if (xhr.status === 200) {
+                  // Add the svg html to the icon's parent element
+                  if (!icon.nextElementSibling) icon.parentNode.innerHTML += xhr.responseText;
+                }
+              }; // Send the request
+
+
+              xhr.send();
+            }
+          }
+
+          ;
+        });
+      } else this.icons = [];
+    }, 500);
+  }
+
+}
+
+exports.IconFieldController = IconFieldController;
 
 class PageObserverController {
   constructor() {
