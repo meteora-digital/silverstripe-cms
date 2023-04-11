@@ -1561,6 +1561,10 @@ a[target="_blank"],
 a:not([class]) {
   color: var(--cms-link-colour)!important;
 }
+
+.cms-menu__list li a {
+  color: var(--cms-text-colour)!important;
+}
 .ss-loading-screen {
   background-color: var(--cms-background-colour);
 }
