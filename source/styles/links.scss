@@ -1,4 +1,4 @@
-a.URL-link,
+.URL-link,
 .showOnClick a,
 .uploadfield__upload-button,
 .uploadfield__add-button,
@@ -6,5 +6,5 @@ label a,
 p a,
 a[target="_blank"],
 a:not([class]) {
-  color: var(--cms-link-colour);
+  color: var(--cms-link-colour)!important;
 }
