@@ -63,6 +63,7 @@
   .state-name {
     box-shadow: none!important;
     background-image: none!important;
+    border: 0!important;
 
     &.active {
       background-color: var(--cms-accent-colour);
@@ -196,4 +197,19 @@ input[type="datetime-local"],
 
 .btn.btn-outline-secondary {
   background-color: var(--cms-border-colour) !important;
+}
+
+div.switch-states {
+  .switch {
+    box-shadow: none !important;
+  }
+}
+
+.preview-mode-selector,
+.preview-size-selector {
+  .chosen-container-single {
+    .chosen-single {
+      border: 0 !important;
+    }
+  }
 }

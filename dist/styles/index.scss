@@ -217,6 +217,7 @@ a.breadcrumb__item-title {
   .state-name {
     box-shadow: none!important;
     background-image: none!important;
+    border: 0!important;
 
     &.active {
       background-color: var(--cms-accent-colour);
@@ -350,6 +351,21 @@ input[type="datetime-local"],
 
 .btn.btn-outline-secondary {
   background-color: var(--cms-border-colour) !important;
+}
+
+div.switch-states {
+  .switch {
+    box-shadow: none !important;
+  }
+}
+
+.preview-mode-selector,
+.preview-size-selector {
+  .chosen-container-single {
+    .chosen-single {
+      border: 0 !important;
+    }
+  }
 }
 .cms-container {
   color: var(--cms-text-colour);
@@ -837,6 +853,46 @@ a .jstree-pageicon,
 
 .cms .gridfield-icon.published i {
   color: var(--cms-accent-colour) !important;
+}
+$field-width: 83%;
+
+.cms-edit-form {
+  .form-group {
+    &.field {
+      display: block!important;
+      max-width: 1500px!important;
+      margin-bottom: 0;
+
+      &:before,
+      &:after {
+        content: ''!important;
+        display: table!important;
+      }
+    
+      &:after {
+        clear: both!important;
+        margin-top: 0!important;
+        margin-bottom: 0!important;
+      }
+
+      .form__field-label,
+      .form__field-holder {
+        display: block!important;
+        float: left;
+        margin-bottom: 2rem;
+      }
+
+      .form__field-label {
+        width: 100 - $field-width !important;
+        max-width: 100 - $field-width !important;
+      }
+
+      .form__field-holder {
+        width: $field-width !important;
+        max-width: $field-width !important;
+      }
+    }
+  }
 }
 @mixin cms-logo($url, $width, $height) {
   .cms-sitename {
