@@ -1,39 +1,41 @@
 $field-width: 83%;
 
 .cms-edit-form {
-  .form-group {
-    &.field {
-      display: block!important;
-      max-width: 1500px!important;
-      margin-bottom: 0;
+  .tab-pane {
+    >.form-group {
+      &.field {
+        display: block !important;
+        max-width: 1500px !important;
+        margin-bottom: 0;
 
-      &:before,
-      &:after {
-        content: ''!important;
-        display: table!important;
-      }
-    
-      &:after {
-        clear: both!important;
-        margin-top: 0!important;
-        margin-bottom: 0!important;
-      }
+        &:before,
+        &:after {
+          content: '' !important;
+          display: table !important;
+        }
 
-      .form__field-label,
-      .form__field-holder {
-        display: block!important;
-        float: left;
-        margin-bottom: 2rem;
-      }
+        &:after {
+          clear: both !important;
+          margin-top: 0 !important;
+          margin-bottom: 0 !important;
+        }
 
-      .form__field-label {
-        width: 100 - $field-width !important;
-        max-width: 100 - $field-width !important;
-      }
+        >.form__field-label,
+        >.form__field-holder {
+          display: block !important;
+          float: left;
+          margin-bottom: 2rem;
+        }
 
-      .form__field-holder {
-        width: $field-width !important;
-        max-width: $field-width !important;
+        >.form__field-label {
+          width: 100 - $field-width !important;
+          max-width: 100 - $field-width !important;
+        }
+
+        >.form__field-holder {
+          width: $field-width !important;
+          max-width: $field-width !important;
+        }
       }
     }
   }
