@@ -799,7 +799,8 @@ a .jstree-pageicon,
 .message.warning,
 .message.notice,
 .alert.alert-danger,
-.alert.error {
+.alert.error,
+.alert.alert-success {
   &:before {
     content: '';
     position: absolute;
@@ -833,6 +834,12 @@ a .jstree-pageicon,
     &:before {
       background-color: var(--danger);
     }
+  }
+}
+
+.alert.alert-success {
+  &:before {
+    background-color: var(--teal);
   }
 }
 
