@@ -798,7 +798,8 @@ a .jstree-pageicon,
 
 .message.warning,
 .message.notice,
-.alert.alert-danger {
+.alert.alert-danger,
+.alert.error {
   &:before {
     content: '';
     position: absolute;
