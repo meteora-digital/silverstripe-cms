@@ -367,6 +367,18 @@ div.switch-states {
     }
   }
 }
+
+.tag-list {
+  .tag-component {
+    background-color: var(--cms-accent-colour) !important;
+
+    &,
+    &__delete {
+      color: var(--cms-background-colour--dark)!important;
+    }
+  }
+}
+
 .cms-container {
   color: var(--cms-text-colour);
 }
