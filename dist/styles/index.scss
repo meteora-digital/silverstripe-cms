@@ -827,7 +827,8 @@ a .jstree-pageicon,
 }
 
 .alert {
-  &.alert-danger {
+  &.alert-danger,
+  &.error {
     &:before {
       background-color: var(--danger);
     }
