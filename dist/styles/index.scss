@@ -1111,6 +1111,7 @@ ul.colorpalette {
       // outline: 2px solid #ced5e1!important;
     }
 
+    input[value="None"],
     input[value="none"],
     input[value="transparent"] {
       + label:before {
