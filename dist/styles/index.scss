@@ -605,7 +605,7 @@ a .jstree-pageicon,
   border-color: transparent !important;
 
   &.mce-active {
-    background-color: var(--cms-background-colour) !important;
+    background-color: var(--cms-background-colour--light) !important;
     border-color: var(--cms-border-colour) !important;
   }
 
