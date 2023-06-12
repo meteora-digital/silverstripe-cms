@@ -551,7 +551,7 @@ a .jstree-pageicon,
 }
 
 .mce-panel {
-  background-color: var(--cms-background-colour--dynamic) !important;
+  background-color: var(--cms-background-colour--dark) !important;
   border-color: var(--cms-border-colour) !important;
 }
 
@@ -2164,6 +2164,10 @@ form {
   .mce-container-body {
     background-color: transparent !important;
   }
+}
+
+.mce-menu-item-normal.mce-active {
+  background-color: var(--cms-background-colour--light)!important;
 }
 .cms-content-toolbar {
   margin: 0!important;
