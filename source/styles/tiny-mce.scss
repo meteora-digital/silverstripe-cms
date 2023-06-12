@@ -33,6 +33,9 @@
   }
 }
 
+.mce-menu-item:hover,
+.mce-menu-item.mce-selected,
+.mce-menu-item:focus,
 .mce-menu-item-normal.mce-active {
   background-color: var(--cms-background-colour--light)!important;
 }
