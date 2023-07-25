@@ -1,3 +1,32 @@
+.griddle-footer {
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  .griddle-previous,
+  .griddle-next {
+    button {
+      height: auto !important;
+      background-color: var(--cms-primary-colour) !important;
+
+      &:before {
+        line-height: 28px;
+        height: auto !important;
+        color: var(--cms-background-colour--dark) !important;
+      }
+    }
+  }
+}
+
+.bulk-actions {
+  &__action {
+    cursor: pointer;
+    color: var(--cms-text-colour) !important;
+
+    &:hover {
+      background-color: var(--cms-background-colour--dark) !important;
+    }
+  }
+}
 .badge {
   &.version-status {
     background-color: var(--cms-background-colour--light);
