@@ -2280,6 +2280,76 @@ form {
 .btn-toolbar {
   border-color: var(--cms-border-colour)!important;
 }
+.treedropdownfield {
+  &__control {
+    border-color: var(--cms-border-colour)!important;
+    background-color: var(--cms-background-colour--dark)!important;
+  }
+
+  &__indicator-separator {
+    background-color: var(--cms-border-colour)!important;
+  }
+
+  &__indicator {
+    svg {
+      color: var(--cms-text-colour)!important;
+    }
+  }
+
+  &__menu {
+    z-index: 100;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 2rem 0 rgba(0, 0, 0, 0.3);
+    background-color: var(--cms-background-colour--dark)!important;
+    border-color: var(--cms-border-colour)!important;
+  }
+
+  &__menu-list {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &__option {
+    cursor: pointer;
+    color: var(--cms-text-colour)!important;
+    background-color: var(--cms-background-colour--dynamic)!important;
+    border-color: var(--cms-border-colour)!important;
+
+    &:hover {
+      background-color: var(--cms-background-colour)!important;
+    }
+  }
+
+  &__single-value {
+    color: var(--cms-text-colour)!important;
+  }
+}
+
+/*
+<html>
+ <head></head>
+ <body>
+  <div class="treedropdownfield__menu-list react-select-qr46ko">
+   <div class="fill-width treedropdownfield__option treedropdownfield__option--is-focused react-select-d7l1ni-option" aria-disabled="false" id="react-select-2-option-1" tabindex="-1">
+    <span class="treedropdownfield__option-title-box flexbox-area-grow fill-height"><span class="treedropdownfield__option-title">Home</span></span>
+   </div>
+   <div class="fill-width treedropdownfield__option react-select-10wo9uf-option" aria-disabled="false" id="react-select-2-option-2" tabindex="-1">
+    <span class="treedropdownfield__option-title-box flexbox-area-grow fill-height"><span class="treedropdownfield__option-title">About Us</span></span>
+   </div>
+   <div class="fill-width treedropdownfield__option react-select-10wo9uf-option" aria-disabled="false" id="react-select-2-option-3" tabindex="-1">
+    <span class="treedropdownfield__option-title-box flexbox-area-grow fill-height"><span class="treedropdownfield__option-title">Contact Us</span></span>
+   </div>
+   <div class="fill-width treedropdownfield__option react-select-10wo9uf-option" aria-disabled="false" id="react-select-2-option-4" tabindex="-1">
+    <span class="treedropdownfield__option-title-box flexbox-area-grow fill-height"><span class="treedropdownfield__option-title">Page not found</span></span>
+   </div>
+   <div class="fill-width treedropdownfield__option react-select-10wo9uf-option" aria-disabled="false" id="react-select-2-option-5" tabindex="-1">
+    <span class="treedropdownfield__option-title-box flexbox-area-grow fill-height"><span class="treedropdownfield__option-title">Server error</span></span>
+   </div>
+  </div>
+ </body>
+</html>
+*/
 .ui-dialog {
   background: var(--cms-background-colour--dynamic) !important;
   border-color: var(--cms-border-colour) !important;
