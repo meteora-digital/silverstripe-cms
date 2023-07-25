@@ -1,0 +1,6 @@
+input[readonly] {
+  border-radius: 0!important;
+  border: 0!important;
+  background-color: var(--cms-border-colour)!important;
+  pointer-events: none!important;
+}

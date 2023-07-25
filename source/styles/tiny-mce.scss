@@ -1,3 +1,106 @@
+.tox-tinymce {
+  color: var(--cms-text-colour)!important;
+  border-color: var(--cms-border-colour)!important;
+}
+
+.tox-toolbar,
+.tox .tox-toolbar-overlord,
+.tox:not(.tox-tinymce-inline) .tox-editor-header {
+  color: var(--cms-text-colour)!important;
+  border-color: var(--cms-border-colour)!important;
+  background-color: var(--cms-background-light)!important;
+}
+
+.tox .tox-tbtn {
+  border: 0!important;
+  color: var(--cms-text-colour)!important;
+  background-color: var(--cms-background-light)!important;
+
+  &.tox-tbtn--enabled,
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--cms-background-colour--light)!important;
+    background-color: var(--cms-accent-colour)!important;
+  }
+
+  svg {
+    fill: currentColor!important;
+  }
+}
+
+.tox:not([dir="rtl"]) .tox-toolbar__group:not(:last-of-type) {
+  border-color: var(--cms-border-colour)!important;
+}
+
+.tox .tox-collection__item-label {
+  line-height: 1!important;
+
+  div[style] {
+    font-size: 14px!important;
+  }
+}
+
+.tox-menu {
+  border-color: var(--cms-border-colour)!important;
+  background-color: var(--cms-background-colour--light)!important;
+}
+
+.tox-collection__item {
+  * {
+    color: var(--cms-text-colour)!important;
+  }
+
+  &--active {
+    background-color: var(--cms-background-colour--dark)!important;
+
+    * {
+      color: var(--cms-text-colour) !important;
+    }
+  }
+
+  &--enabled {
+    background-color: var(--cms-accent-colour)!important;
+
+    * {
+      color: var(--cms-background-colour--light)!important;
+    }
+  }
+}
+
+.tox-statusbar {
+  border-color: var(--cms-border-colour)!important;
+  background-color: var(--cms-background-colour--light)!important;
+
+  * {
+    color: var(--cms-text-colour)!important;
+    border-color: var(--cms-border-colour) !important;
+  }
+}
+
+.tox .tox-statusbar__resize-handle svg {
+  fill: var(--cms-text-colour)!important;
+}
+
+.tox-dialog {
+  &,
+  &__header,
+  &__footer {
+    color: var(--cms-text-colour)!important;
+    background-color: var(--cms-background-colour--light)!important;
+  }
+
+  .tox-button {
+    border: 0!important;
+    color: var(--cms-background-colour)!important;
+    background-color: var(--cms-accent-colour)!important;
+
+    &--secondary {
+      background-color: var(--cms-text-colour)!important;
+    }
+  }
+}
+
 .mce-container {
   &.mce-inline-toolbar {
     background-color: var(--cms-background-colour--dark);
