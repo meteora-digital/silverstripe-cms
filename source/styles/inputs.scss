@@ -13,7 +13,7 @@ input {
     color: var(--cms-text-colour) !important;
     box-shadow: none !important;
     border-radius: 5px !important;
-  
+
     &:focus {
       border-color: var(--cms-border-colour) !important;
     }
@@ -164,4 +164,8 @@ textarea {
 
 .form__fieldgroup-label {
   color: var(--cms-text-colour--dynamic)!important;
+}
+
+.form__field-extra-label {
+  float: left;
 }
