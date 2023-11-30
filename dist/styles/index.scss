@@ -1,3 +1,18 @@
+.form-check-label {
+  span {
+    &:before {
+      border-color: var(--cms-border-colour) !important;
+      background-color: transparent !important;
+    }
+  }
+
+  input:checked+span {
+    &:before {
+      background-color: var(--cms-background-colour--light) !important;
+    }
+  }
+}
+
 .griddle-footer {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -27,6 +42,7 @@
     }
   }
 }
+
 .badge {
   &.version-status {
     background-color: var(--cms-background-colour--light);
@@ -1350,7 +1366,7 @@ ul.IconField {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    width: calc(20% - 10px);
+    width: calc(15.73% - 10px);
     margin-bottom: 20px;
 
     input {
@@ -1367,7 +1383,9 @@ ul.IconField {
     }
 
     input[value=""] {
-      +label {
+      + label {
+        color: var(--cms-background-colour--dynamic);
+        background-color: var(--cms-accent-colour) !important;
 
         &:after {
           content: none !important;
@@ -1376,7 +1394,7 @@ ul.IconField {
         &:before {
           content: 'none';
           position: absolute;
-          color: var(--cms-text-colour);
+          color: inherit;
           top: 50%;
           left: 50%;
           // opacity: .6;
@@ -1398,27 +1416,43 @@ ul.IconField {
       width: 100% !important;
       height: 0 !important;
       padding: 0 0 100% 0 !important;
+      color: var(--cms-text-colour);
       background-color: var(--cms-background-colour);
       box-shadow: inset 0 0 0 1px var(--cms-border-colour);
-      transition: background-color 0.3s 0s ease;
+      transition:
+        color .3s ease,
+        background-color .3s 0s ease;
 
       &:hover {
         background-color: var(--cms-background-colour--dark);
       }
+    }
 
-      img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 75% !important;
-        height: 75% !important;
-        object-fit: contain;
-        object-position: center;
-        transform: translate(-50%, -50%);
+    img {
+      opacity: 0;
+    }
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 75% !important;
+      height: 75% !important;
+      object-fit: contain;
+      object-position: center;
+      transform: translate(-50%, -50%);
+
+      [fill^="#"] {
+        fill: currentColor;
+      }
+
+      [stroke^="#"] {
+        stroke: currentColor;
       }
     }
   }
 }
+
 input {
   &[type="text"],
   &[type="password"],
@@ -2062,6 +2096,14 @@ select {
 .jstree .status-addedtodraft>.jstree-hovered {
   background-color: var(--cms-background-colour--dark);
 }
+
+.treedropdownfield {
+  &__input {
+    opacity: 0 !important;
+    ;
+  }
+}
+
 .step-label .flyout {
   color: var(--cms-accent-colour)!important;
 }
@@ -2170,6 +2212,61 @@ form {
 .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-active .nav-link:hover,
 .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-active a {
   border-color: var(--cms-text-colour) !important;
+}
+.ss-tag-field {
+  &__control {
+    color: var(--cms-text-colour);
+    border-color: var(--cms-border-colour)!important;
+    background-color: var(--cms-background-colour);
+
+    input {
+      background-color: transparent !important;
+    }
+  }
+
+  &__indicator-separator {
+    background-color: var(--cms-border-colour) !important;
+  }
+
+  svg {
+    color: var(--cms-text-colour);
+  }
+
+  .ss-tag-field__multi-value {
+    border-radius: 0;
+    border-color: var(--cms-background-colour--light)!important;
+  }
+
+  .ss-tag-field__multi-value__label,
+  .ss-tag-field__multi-value__remove {
+    border-radius: 0;
+    color: var(--cms-background-colour)!important;
+    background-color: var(--cms-accent-colour)!important;
+    border-color: var(--cms-background-colour--light) !important;
+
+    svg {
+      color: inherit!important;
+    }
+  }
+}
+
+#react-select-2-listbox {
+  border: 1px solid var(--cms-border-colour);
+  background-color: var(--cms-background-colour);
+
+  * {
+    color: var(--cms-text-colour);
+    border-color: var(--cms-border-colour) !important;
+  }
+
+  .ss-tag-field__option {
+    cursor: pointer;
+
+    &--is-focused {
+      color: var(--cms-background-colour);
+      background-color: var(--cms-accent-colour);
+    }
+  }
 }
 .tox-tinymce {
   color: var(--cms-text-colour)!important;
@@ -2423,6 +2520,43 @@ form {
 .btn-toolbar {
   border-color: var(--cms-border-colour)!important;
 }
+
+.silverstripe-cms-toolbar-icon {
+  &--darkmode {
+    &:after {
+      content: 'darkmode: ' attr(data-darkmode) !important;
+      white-space: nowrap;
+      opacity: 1 !important;
+      letter-spacing: 1px;
+      font-weight: 400 !important;
+    }
+  }
+}
+
+.tox {
+  .tox-pop {
+    &:before,
+    &:after {
+      content: none!important;
+    }
+
+    &__dialog {
+      border-color: var(--cms-border-colour)!important;
+      background-color: var(--cms-background-colour--dynamic)!important;
+    }
+  }
+}
+
+.tox-dialog__body-content {
+  color: var(--cms-text-colour)!important;
+}
+
+.htmleditor.white-background {
+  iframe {
+    background-color: #fff!important;
+  }
+}
+
 .treedropdownfield {
   &__control {
     border-color: var(--cms-border-colour)!important;
@@ -2531,6 +2665,11 @@ body {
     border-color: var(--cms-border-colour) !important;
   }
 }
+
+.form__field-label {
+  color: var(--cms-text-colour);
+}
+
 $cms-background-colour: #f1f1f1;
 
 :root {

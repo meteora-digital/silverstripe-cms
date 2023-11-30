@@ -1,0 +1,55 @@
+.ss-tag-field {
+  &__control {
+    color: var(--cms-text-colour);
+    border-color: var(--cms-border-colour)!important;
+    background-color: var(--cms-background-colour);
+
+    input {
+      background-color: transparent !important;
+    }
+  }
+
+  &__indicator-separator {
+    background-color: var(--cms-border-colour) !important;
+  }
+
+  svg {
+    color: var(--cms-text-colour);
+  }
+
+  .ss-tag-field__multi-value {
+    border-radius: 0;
+    border-color: var(--cms-background-colour--light)!important;
+  }
+
+  .ss-tag-field__multi-value__label,
+  .ss-tag-field__multi-value__remove {
+    border-radius: 0;
+    color: var(--cms-background-colour)!important;
+    background-color: var(--cms-accent-colour)!important;
+    border-color: var(--cms-background-colour--light) !important;
+
+    svg {
+      color: inherit!important;
+    }
+  }
+}
+
+#react-select-2-listbox {
+  border: 1px solid var(--cms-border-colour);
+  background-color: var(--cms-background-colour);
+
+  * {
+    color: var(--cms-text-colour);
+    border-color: var(--cms-border-colour) !important;
+  }
+
+  .ss-tag-field__option {
+    cursor: pointer;
+
+    &--is-focused {
+      color: var(--cms-background-colour);
+      background-color: var(--cms-accent-colour);
+    }
+  }
+}

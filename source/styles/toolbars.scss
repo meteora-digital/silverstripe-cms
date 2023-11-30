@@ -106,3 +106,15 @@
 .btn-toolbar {
   border-color: var(--cms-border-colour)!important;
 }
+
+.silverstripe-cms-toolbar-icon {
+  &--darkmode {
+    &:after {
+      content: 'darkmode: ' attr(data-darkmode) !important;
+      white-space: nowrap;
+      opacity: 1 !important;
+      letter-spacing: 1px;
+      font-weight: 400 !important;
+    }
+  }
+}

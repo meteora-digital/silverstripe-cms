@@ -55,3 +55,10 @@
 .jstree .status-addedtodraft>.jstree-hovered {
   background-color: var(--cms-background-colour--dark);
 }
+
+.treedropdownfield {
+  &__input {
+    opacity: 0 !important;
+    ;
+  }
+}

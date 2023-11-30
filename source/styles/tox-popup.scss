@@ -1,0 +1,23 @@
+.tox {
+  .tox-pop {
+    &:before,
+    &:after {
+      content: none!important;
+    }
+
+    &__dialog {
+      border-color: var(--cms-border-colour)!important;
+      background-color: var(--cms-background-colour--dynamic)!important;
+    }
+  }
+}
+
+.tox-dialog__body-content {
+  color: var(--cms-text-colour)!important;
+}
+
+.htmleditor.white-background {
+  iframe {
+    background-color: #fff!important;
+  }
+}

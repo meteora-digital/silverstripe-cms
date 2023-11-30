@@ -1,3 +1,18 @@
+.form-check-label {
+  span {
+    &:before {
+      border-color: var(--cms-border-colour) !important;
+      background-color: transparent !important;
+    }
+  }
+
+  input:checked+span {
+    &:before {
+      background-color: var(--cms-background-colour--light) !important;
+    }
+  }
+}
+
 .griddle-footer {
   margin-top: 40px;
   margin-bottom: 40px;
