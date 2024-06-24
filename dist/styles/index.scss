@@ -2594,6 +2594,20 @@ form {
   }
 }
 
+.tox-dialog {
+  &__body-nav-item {
+    color: var(--cms-text-colour) !important;
+
+    &--active {
+      border-color: var(--cms-accent-colour) !important;
+    }
+  }
+}
+
+.tox-label {
+  color: var(--cms-text-colour) !important;
+}
+
 .treedropdownfield {
   &__control {
     border-color: var(--cms-border-colour)!important;
