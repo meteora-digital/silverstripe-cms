@@ -1,5 +1,7 @@
 .ss-tag-field__menu {
-  background-color: var(--cms-background-colour--dark);
+  border: 1px solid var(--cms-border-colour) !important;
+  background-color: var(--cms-background-colour--dynamic) !important;
+  box-shadow: none !important;
 }
 
 .ss-tag-field__option {
