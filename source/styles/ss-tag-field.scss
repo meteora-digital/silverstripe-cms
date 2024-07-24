@@ -1,0 +1,13 @@
+.ss-tag-field__menu {
+  background-color: var(--cms-background-colour--dark);
+}
+
+.ss-tag-field__option {
+  color: var(--cms-text-colour) !important;
+  background-color: var(--cms-background-colour--dynamic) !important;
+
+  &--is-focused {
+    color: var(--cms-background-colour--dark) !important;
+    background-color: var(--cms-accent-colour) !important;
+  }
+}
