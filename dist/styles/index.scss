@@ -2090,6 +2090,31 @@ select {
   color: var(--cms-text-colour) !important;
 }
 
+
+.ss-searchable-dropdown-field {
+  &__control {
+    background-color: var(--cms-background-colour--dynamic);
+    border-color: var(--cms-border-colour);
+    color: var(--cms-text-colour);
+  }
+
+  &__input {
+    --cms-background-colour--dark: transparent;
+  }
+
+  &__menu {
+    background-color: var(--cms-background-colour--dynamic);
+    border-color: var(--cms-border-colour);
+    color: var(--cms-text-colour);
+  }
+
+  &__option {
+    background-color: var(--cms-background-colour--dynamic);
+    border-color: var(--cms-border-colour);
+    color: var(--cms-text-colour);
+  }
+}
+
 .cms-tree {
   ul {
     li {
