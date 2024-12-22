@@ -2736,10 +2736,18 @@ form {
 .ui-dialog {
   background: var(--cms-background-colour--dynamic) !important;
   border-color: var(--cms-border-colour) !important;
+  max-height: 80vh;
+  overflow: auto;
 }
 
 .ui-icon-closethick {
   transform: scale(.75);
+}
+
+.ui-dialog-titlebar-close {
+  top: 5px!important;
+  right: 5px!important;
+  transform: none!important;
 }
 
 body {
@@ -2761,6 +2769,7 @@ body {
     }
   }
 }
+
 .form__field-holder {
   .preview {
     background-color: transparent !important;
