@@ -1,0 +1,42 @@
+.anchorselectorfield {
+  &__control {
+    color: var(--cms-text-colour);
+    border-color: var(--cms-border-colour);
+    background-color: var(--cms-background-colour--dark);
+  }
+
+  &__control--menu-is-open & {
+    &__value-container {
+      * {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__value-container {
+    * {
+      opacity: .5;
+      color: var(--cms-text-colour);
+    }
+  }
+
+  &__menu {
+    border: 1px solid var(--cms-border-colour);
+    background-color: var(--cms-background-colour--dark);
+
+    &,
+    * {
+      border-radius: 3px;
+      color: var(--cms-text-colour);
+    }
+
+    * {
+      background-color: transparent;
+
+      &:hover {
+        color: var(--cms-background-colour--dark);
+        background-color: var(--cms-accent-colour);
+      }
+    }
+  }
+}
