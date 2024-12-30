@@ -1,4 +1,8 @@
 .anchorselectorfield {
+  &__indicator {
+    color: var(--cms-text-colour);
+  }
+
   &__control {
     color: var(--cms-text-colour);
     border-color: var(--cms-border-colour);
@@ -30,13 +34,14 @@
       color: var(--cms-text-colour);
     }
 
-    * {
-      background-color: transparent;
+  }
 
-      &:hover {
-        color: var(--cms-background-colour--dark);
-        background-color: var(--cms-accent-colour);
-      }
+  &__option {
+    background-color: transparent;
+
+    &:hover {
+      color: var(--cms-background-colour--dark);
+      background-color: var(--cms-accent-colour);
     }
   }
 }
