@@ -2836,13 +2836,13 @@ body {
 $cms-background-colour: #f1f1f1;
 
 :root {
-  --cms-background-colour: #{$cms-background-colour};
-  --cms-background-colour--dark: #{darken($cms-background-colour, 3%)};
-  --cms-background-colour--light: #{lighten($cms-background-colour, 5%)};
-  --cms-background-colour--dynamic: #{darken($cms-background-colour, 3%)};
-  --cms-border-colour: #{darken($cms-background-colour, 20%)};
+  --cms-background-colour: #f1f1f1;
+  --cms-background-colour--dark: #e9e9e9;
+  --cms-background-colour--light: #fefefe;
+  --cms-background-colour--dynamic: #e9e9e9;
+  --cms-border-colour: #bebebe;
   --cms-link-colour: #036cd7;
-  --cms-text-colour: #{grayscale(invert($cms-background-colour, 100%))};
-  --cms-text-colour--dynamic: #{grayscale(invert($cms-background-colour, 50%))};
+  --cms-text-colour: #0e0e0e;
+  --cms-text-colour--dynamic: grey;
   --cms-accent-colour: #005a92;
 }
