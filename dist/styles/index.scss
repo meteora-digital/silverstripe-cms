@@ -142,6 +142,11 @@
 a.breadcrumb__item-title {
   color: var(--cms-accent-colour)!important;
 }
+.bulk-actions-counter {
+  color: var(--cms-text-colour)!important;
+  background-color: var(--cms-background-colour--dynamic)!important;
+}
+
 
 .ui-dialog {
   .linkfield-dialog {
