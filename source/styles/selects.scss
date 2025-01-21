@@ -334,6 +334,10 @@ select {
   }
 
   &__indicator {
-    color: var(--cms-text-colour);
+    color: var(--cms-text-colour)!important;
+  }
+
+  &__input-container {
+    cursor: text;
   }
 }
