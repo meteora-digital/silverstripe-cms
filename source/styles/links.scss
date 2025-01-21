@@ -13,7 +13,3 @@ a:not([class]) {
 .cms-menu__list li a {
   color: var(--cms-text-colour)!important;
 }
-
-.cms-menu__list li.current a {
-  color: var(--cms-background-colour--dark)!important;
-}

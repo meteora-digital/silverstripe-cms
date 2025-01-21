@@ -25,7 +25,7 @@
   .ss-tag-field__multi-value__label,
   .ss-tag-field__multi-value__remove {
     border-radius: 0;
-    color: var(--cms-background-colour)!important;
+    color: var(--cms-accent-text-colour, var(--cms-background-colour--dark))!important;
     background-color: var(--cms-accent-colour)!important;
     border-color: var(--cms-background-colour--light) !important;
 
@@ -48,7 +48,7 @@
     cursor: pointer;
 
     &--is-focused {
-      color: var(--cms-background-colour);
+      color: var(--cms-accent-text-colour, var(--cms-background-colour--dark));
       background-color: var(--cms-accent-colour);
     }
   }

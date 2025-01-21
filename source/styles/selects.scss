@@ -26,7 +26,7 @@ select {
 
       &.highlighted {
         background: none !important;
-        color: var(--cms-background-colour) !important;
+        color: var(--cms-accent-text-colour, var(--cms-background-colour--dark)) !important;
         background-color: var(--cms-accent-colour) !important;
       }
     }
@@ -72,7 +72,7 @@ select {
 }
 
 .treedropdownfield__breadcrumbs {
-  color: var(--cms-background-colour) !important;
+  color: var(--cms-accent-text-colour, var(--cms-background-colour--dark)) !important;
   background-color: var(--cms-accent-colour) !important;
 }
 
@@ -147,7 +147,7 @@ select {
 
     &.result-selected {
       background-color: var(--cms-accent-colour) !important;
-      color: var(--cms-background-colour) !important;
+      color: var(--cms-accent-text-colour, var(--cms-background-colour--dark)) !important;
     }
   }
 }
@@ -172,7 +172,7 @@ select {
 
     &.result-selected,
     &.highlighted {
-      color: var(--cms-background-colour) !important;
+      color: var(--cms-accent-text-colour, var(--cms-background-colour--dark)) !important;
     }
 
     &.result-selected {
@@ -193,7 +193,7 @@ select {
   background-color: var(--cms-accent-colour) !important;
   border-color: var(--cms-border-colour) !important;
   // color: var(--cms-text-colour)!important;
-  color: var(--cms-background-colour--dark) !important;
+  color: var(--cms-accent-text-colour, var(--cms-background-colour--dark)) !important;
 }
 
 .toolbar--south {
@@ -244,7 +244,7 @@ select {
       }
 
       &.result-selected {
-        color: var(--cms-background-colour) !important;
+        color: var(--cms-accent-text-colour, var(--cms-background-colour--dark)) !important;
       }
     }
   }
@@ -287,7 +287,7 @@ select {
   .Select-value-icon,
   .Select-value-label {
     border-color: var(--cms-border-colour) !important;
-    color: var(--cms-background-colour) !important;
+    color: var(--cms-accent-text-colour, var(--cms-background-colour--dark)) !important;
   }
 }
 
@@ -325,7 +325,7 @@ select {
 
     &--is-focused {
       background-color: var(--cms-accent-colour);
-      color: var(--cms-background-colour) !important;
+      color: var(--cms-accent-text-colour, var(--cms-background-colour--dark)) !important;
     }
   }
 

@@ -40,7 +40,7 @@
     background-color: transparent;
 
     &:hover {
-      color: var(--cms-background-colour--dark);
+      color: var(--cms-accent-text-colour, var(--cms-background-colour--dark));
       background-color: var(--cms-accent-colour);
     }
   }

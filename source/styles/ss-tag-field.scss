@@ -9,7 +9,7 @@
   background-color: var(--cms-background-colour--dynamic) !important;
 
   &--is-focused {
-    color: var(--cms-background-colour--dark) !important;
+    color: var(--cms-accent-text-colour, var(--cms-background-colour--dark)) !important;
     background-color: var(--cms-accent-colour) !important;
   }
 }

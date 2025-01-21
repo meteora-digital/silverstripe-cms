@@ -153,19 +153,19 @@
 
       &.current {
         a {
-          color: var(--cms-background-colour--dark);
+          color: var(--cms-accent-text-colour, var(--cms-background-colour--dark))!important;
           background-color: var(--cms-accent-colour);
 
           &:hover,
           &:focus {
-            color: var(--cms-background-colour--dark);
+            color: var(--cms-accent-text-colour, var(--cms-background-colour--dark))!important;
             background-color: var(--cms-accent-colour)!important;
           }
         }
 
         .menu__icon {
           &:before {
-            color: var(--cms-background-colour--dark) !important;
+            color: var(--cms-accent-text-colour, var(--cms-background-colour--dark)) !important;
           }
         }
       }

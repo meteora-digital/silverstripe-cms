@@ -20,7 +20,7 @@
   &:hover,
   &:focus,
   &:active {
-    color: var(--cms-background-colour--light)!important;
+    color: var(--cms-accent-text-colour, var(--cms-background-colour--dark))!important;
     background-color: var(--cms-accent-colour)!important;
   }
 
@@ -63,7 +63,7 @@
     background-color: var(--cms-accent-colour)!important;
 
     * {
-      color: var(--cms-background-colour--light)!important;
+      color: var(--cms-accent-text-colour, var(--cms-background-colour--dark))!important;
     }
   }
 }
@@ -92,7 +92,7 @@
 
   .tox-button {
     border: 0!important;
-    color: var(--cms-background-colour)!important;
+    color: var(--cms-accent-text-colour, var(--cms-background-colour--dark))!important;
     background-color: var(--cms-accent-colour)!important;
 
     &--secondary {
