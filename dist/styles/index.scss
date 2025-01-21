@@ -136,13 +136,14 @@
 
 .breadcrumbs-wrapper {
   a.cms-panel-link {
-    color: var(--cms-accent-colour)!important;
+    color: var(--cms-link-colour)!important;
   }
 }
 
 a.breadcrumb__item-title {
-  color: var(--cms-accent-colour)!important;
+  color: var(--cms-link-colour)!important;
 }
+
 .bulk-actions .bulk-actions-counter {
   color: var(--cms-text-colour)!important;
   background-color: var(--cms-background-colour--dynamic)!important;
@@ -186,7 +187,7 @@ a.breadcrumb__item-title {
 }
 
 .btn-outline-primary {
-  color: var(--cms-accent-colour)!important;
+  color: var(--cms-link-colour)!important;
 
   &:hover,
   &:focus {
