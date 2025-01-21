@@ -340,4 +340,8 @@ select {
   &__input-container {
     cursor: text;
   }
+
+  &__indicator-separator {
+    background-color: var(--cms-border-colour)!important;
+  }
 }
