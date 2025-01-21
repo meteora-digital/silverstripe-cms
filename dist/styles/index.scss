@@ -1869,7 +1869,7 @@ select {
       transition: background-color .2s ease;
 
       &.highlighted {
-        background: none!important;
+        background: none !important;
         color: var(--cms-background-colour) !important;
         background-color: var(--cms-accent-colour) !important;
       }
@@ -1892,18 +1892,18 @@ select {
 }
 
 .treedropdownfield__option-button {
-  display: block!important;
-  border: 0!important;
-  border-radius: 5px!important;
-  padding: 0!important;
+  display: block !important;
+  border: 0 !important;
+  border-radius: 5px !important;
+  padding: 0 !important;
   background-color: var(--cms-accent-colour) !important;
 
   .treedropdownfield__option-count-icon {
-    display: inline-block!important;
-    vertical-align: middle!important;
-    line-height: 20px!important;
-    color: var(--cms-text-colour)!important;
-    height: auto!important
+    display: inline-block !important;
+    vertical-align: middle !important;
+    line-height: 20px !important;
+    color: var(--cms-text-colour) !important;
+    height: auto !important
   }
 }
 
@@ -1911,24 +1911,24 @@ select {
   border-color: var(--cms-accent-colour) !important;
 }
 
-.Select.is-focused  > .Select-control{
-  border-color: var(--cms-accent-colour)!important;
+.Select.is-focused>.Select-control {
+  border-color: var(--cms-accent-colour) !important;
 }
 
 .treedropdownfield__breadcrumbs {
-  color: var(--cms-background-colour)!important;
+  color: var(--cms-background-colour) !important;
   background-color: var(--cms-accent-colour) !important;
 }
 
 .treedropdownfield__breadcrumbs-button {
-  height: 20px!important
+  height: 20px !important
 }
 
 .chosen-container {
   .chosen-single {
-    > span {
+    >span {
       &:before {
-        color: var(--cms-text-colour)!important;
+        color: var(--cms-text-colour) !important;
       }
     }
 
@@ -1960,8 +1960,8 @@ select {
   }
 }
 
-.toolbar--south > .btn-toolbar > .preview-selector {
-  max-width: 100px!important;
+.toolbar--south>.btn-toolbar>.preview-selector {
+  max-width: 100px !important;
 }
 
 .chosen-choices {
@@ -1976,7 +1976,7 @@ select {
 }
 
 .chosen-results {
-  background: transparent!important;
+  background: transparent !important;
 
   .active-result {
     background-color: var(--cms-background-colour--light) !important;
@@ -2004,7 +2004,7 @@ select {
 }
 
 .chosen-drop {
-  background: none!important;
+  background: none !important;
   background-color: var(--cms-background-colour--light) !important;
   border-color: var(--cms-border-colour) !important;
 
@@ -2164,6 +2164,20 @@ select {
   &__option {
     background-color: var(--cms-background-colour--dynamic);
     border-color: var(--cms-border-colour);
+    color: var(--cms-text-colour);
+    cursor: pointer;
+
+    &--is-focused {
+      background-color: var(--cms-accent-colour);
+      color: var(--cms-background-colour) !important;
+    }
+  }
+
+  &__single-value {
+    color: var(--cms-text-colour);
+  }
+
+  &__indicator {
     color: var(--cms-text-colour);
   }
 }
