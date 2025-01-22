@@ -54,7 +54,7 @@
   &--active {
     background-color: var(--cms-background-colour--dark)!important;
 
-    *:not([style*="color"]) {
+    * {
       color: var(--cms-text-colour) !important;
     }
   }
