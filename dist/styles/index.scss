@@ -2486,14 +2486,16 @@ form {
 }
 
 .tox-collection__item {
-  *:not([style*="color"]) {
+  * {
+    border: 0!important;
+    background-color: transparent!important;
     color: var(--cms-text-colour)!important;
   }
 
   &--active {
     background-color: var(--cms-background-colour--dark)!important;
 
-    *:not([style*="color"]) {
+    * {
       color: var(--cms-text-colour) !important;
     }
   }
@@ -2502,8 +2504,6 @@ form {
     background-color: var(--cms-accent-colour)!important;
 
     * {
-      border: 0!important;
-      background-color: transparent!important;
       color: var(--cms-accent-text-colour, var(--cms-background-colour--dark))!important;
     }
   }
