@@ -35,3 +35,7 @@
 .tox-label {
   color: var(--cms-text-colour) !important;
 }
+
+.tox .tox-collection--list .tox-collection__item--active:not(.tox-collection__item--state-disabled) .tox-collection__item-caret svg {
+  fill: var(--cms-accent-colour)!important;
+}
