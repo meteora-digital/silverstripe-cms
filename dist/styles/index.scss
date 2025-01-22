@@ -2493,7 +2493,7 @@ form {
   &--active {
     background-color: var(--cms-background-colour--dark)!important;
 
-    * {
+    *:not([style*="color"]) {
       color: var(--cms-text-colour) !important;
     }
   }
@@ -2505,6 +2505,10 @@ form {
       color: var(--cms-accent-text-colour, var(--cms-background-colour--dark))!important;
     }
   }
+}
+
+.tox-collection__item-checkmark svg {
+  fill: var(--cms-accent-text-colour)!important;
 }
 
 .tox-statusbar {
