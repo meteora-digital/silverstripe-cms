@@ -2501,7 +2501,7 @@ form {
   &--enabled {
     background-color: var(--cms-accent-colour)!important;
 
-    *:not([style*="color"]) {
+    * {
       color: var(--cms-accent-text-colour, var(--cms-background-colour--dark))!important;
     }
   }
