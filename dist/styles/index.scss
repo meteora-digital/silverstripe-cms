@@ -2486,7 +2486,7 @@ form {
 }
 
 .tox-collection__item {
-  * {
+  *:not([style*="color"]) {
     color: var(--cms-text-colour)!important;
   }
 
