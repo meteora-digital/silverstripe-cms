@@ -183,7 +183,7 @@ input[type="datetime-local"],
 
 .btn.disabled,
 .btn:disabled {
-  filter: grayscale(1);
+  filter: saturate(.3);
 }
 
 .popover-actions-simulate,
