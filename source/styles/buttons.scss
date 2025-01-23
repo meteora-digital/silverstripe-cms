@@ -185,6 +185,7 @@ input[type="datetime-local"],
 .btn:disabled {
   opacity: .65!important;
   filter: saturate(.5)!important;
+  background-color: var(--cms-accent-colour)!important;
 }
 
 .popover-actions-simulate,
