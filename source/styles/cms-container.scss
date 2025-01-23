@@ -397,11 +397,12 @@ a .jstree-pageicon,
       margin-bottom: 5px !important;
     }
 
-    a {
+    > * {
       background-image: none !important;
       color: var(--cms-text-colour) !important;
 
-      &.ui-state-focus {
+      &.ui-state-focus,
+      &.ui-state-active {
         background-image: none !important;
         background-color: var(--cms-accent-colour) !important;
         color: var(--cms-accent-text-colour, var(--cms-background-colour--dark)) !important;
