@@ -334,7 +334,8 @@ input[type="datetime-local"],
 
 .btn.disabled,
 .btn:disabled {
-  filter: saturate(.3);
+  opacity: .65!important;
+  filter: saturate(.5)!important;
 }
 
 .popover-actions-simulate,
