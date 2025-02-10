@@ -199,6 +199,9 @@ a .jstree-pageicon,
 }
 
 .grid-field__icon-action {
+  &:focus,
+  &:active,
+  &:focus-visible,
   &:hover {
     background-color: transparent !important;
 
