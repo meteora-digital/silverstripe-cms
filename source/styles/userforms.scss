@@ -7,6 +7,10 @@
     background-color: var(--cms-background-colour--dark) !important;
     border-color: var(--cms-border-colour) !important;
   }
+
+  label.readonly {
+    background-color: transparent !important;
+  }
 }
 
 .form__field-label {

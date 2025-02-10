@@ -2594,6 +2594,23 @@ form {
   background-color: var(--cms-background-colour--light)!important;
 }
 
+.tox-tinymce {
+  min-height: 400px !important;
+}
+
+#Root_FormOptions {
+  .form-group {
+    >.form__field-holder {
+      &:has(.htmleditor) {
+        max-width: 100% !important;
+        width: 100% !important;
+        flex-basis: 100% !important;
+        margin-left: 0 !important;
+      }
+    }
+  }
+}
+
 .cms-content-toolbar {
   margin: 0!important;
   padding: 0!important;
@@ -2875,6 +2892,10 @@ body {
   .readonly {
     background-color: var(--cms-background-colour--dark) !important;
     border-color: var(--cms-border-colour) !important;
+  }
+
+  label.readonly {
+    background-color: transparent !important;
   }
 }
 
