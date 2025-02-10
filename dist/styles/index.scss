@@ -2606,6 +2606,9 @@ form {
 }
 
 .ss-gridfield-buttonrow {
+  background: var(--cms-background-colour--light);
+  border-bottom-color: var(--cms-border-colour);
+
   button {
     &:first-of-type {
       margin-left: 0!important;
@@ -2619,8 +2622,8 @@ form {
       ul.chosen-results {
         li.result-selected,
         li.highlighted {
-          background-color: var(--cms-accent-colour);
-          color: var(--cms-text-colour);
+          background-color: var(--cms-accent-colour)!important;
+          color: var(--cms-text-colour)!important;
 
           &:before {
             color: inherit!important;
