@@ -2643,7 +2643,7 @@ form {
         li.result-selected,
         li.highlighted {
           background-color: var(--cms-accent-colour)!important;
-          color: var(--cms-text-colour)!important;
+          color: var(--cms-accent-text-colour, var(--cms-text-colour))!important;
 
           &:before {
             color: inherit!important;
