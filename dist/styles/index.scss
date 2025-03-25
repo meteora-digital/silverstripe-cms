@@ -2626,8 +2626,8 @@ form {
 }
 
 .ss-gridfield-buttonrow {
-  background: var(--cms-background-colour);
-  border-bottom-color: var(--cms-border-colour);
+  background: var(--cms-background-colour)!important;
+  border-bottom-color: var(--cms-border-colour)!important;
 
   button {
     &:first-of-type {
@@ -2637,6 +2637,9 @@ form {
 }
 
 .toolbar--south {
+  background-color: var(--cms-background-colour)!important;
+  border-color: var(--cms-border-colour)!important;
+
   .preview-selector {
     .chosen-drop {
       ul.chosen-results {
