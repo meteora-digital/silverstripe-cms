@@ -28,3 +28,8 @@
 .cms-content-loading-spinner .spinner__animation__fill {
   stroke: var(--cms-accent-colour);
 }
+
+.ui-autocomplete-loading {
+  background-size: 16px 16px !important;
+  background-image: none !important;
+}
