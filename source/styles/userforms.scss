@@ -16,3 +16,10 @@
 .form__field-label {
   color: var(--cms-text-colour);
 }
+
+.uf-field-editor {
+  .ss-gridfield-buttonrow-before {
+    background-color: var(--cms-background-colour--dark) !important;
+    border-color: var(--cms-border-colour) !important;
+  }
+}
