@@ -2897,7 +2897,7 @@ body {
 
 .form__field-update-url {
   &:empty {
-    display: none;
+    display: none!important;
   }
 }
 
