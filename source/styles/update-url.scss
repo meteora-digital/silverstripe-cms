@@ -1,0 +1,13 @@
+.form__field-holder {
+  &:has(.form__field-update-url) {
+    input {
+      width: 100%!important;
+    }
+  }
+}
+
+.form__field-update-url {
+  &:empty {
+    display: none;
+  }
+}
