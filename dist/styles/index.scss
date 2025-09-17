@@ -380,6 +380,7 @@ div.switch-states {
 
 .cms-container {
   color: var(--cms-text-colour);
+  overflow: hidden;
 }
 
 .cms-content-header {
@@ -476,6 +477,8 @@ div.switch-states {
 }
 
 a .jstree-pageicon,
+.record-icon,
+a .jstree-recordicon,
 .cms-tree ul li a,
 .ui-widget,
 .ui-widget-content,
