@@ -1,3 +1,7 @@
+# Discontinued Development Notice
+
+Please use [Marmalade SS CMS](https://github.com/toastnz/marmalade-ss-cms) for the latest and greatest SilverStripe CMS style hacks
+
 # Silverstripe CMS Theme
 
 Install this package and import the SCSS / CSS and JavaScript files into your project to make Silverstripe look awesome.
